@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #231f22;
+  background-color: transparent;
 }
 
 .navbar .logo {
@@ -42,9 +42,14 @@
 }
 
 @media screen and (max-width: 991.5px) {
+  .navbar {
+    background-color: #231f22;
+  }
+
   .navbar #nav-items {
     margin-top: 3rem;
   }
+
   .navbar #responsive-navbar-nav {
     height: 100vh;
   }

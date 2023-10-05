@@ -63,19 +63,19 @@ function Top() {
               </a>
               <hr />
               <a
-                href="#skills"
+                href="#services"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                Skills
+                Services
               </a>
               <hr />
               <a
-                href="#projects"
+                href="#portfolio"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                Projects
+                Portfolio
               </a>
               <hr />
               <a

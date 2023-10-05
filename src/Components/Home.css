@@ -1,0 +1,22 @@
+.home {
+  padding: 15rem 2rem;
+  height: 100vh;
+  background-color: #231f22;
+  background-image: url("../Images/background1.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.home h1 {
+  text-align: center;
+  color: #ef5623;
+}
+
+.home .progressbar {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 0px;
+  height: 50px;
+}
