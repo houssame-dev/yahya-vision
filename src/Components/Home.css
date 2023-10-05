@@ -1,12 +1,27 @@
 .home {
   padding: 15rem 2rem;
   height: 100vh;
-  background-color: #231f22;
-  background-image: url("../Images/background1.png");
-  background-position: right;
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+
+.home::before {
+  content: "";
+  background-image: url("../Images//background1.png");
   background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 20%;
+}
+
+.second-home {
+  position: relative;
 }
 
 .home h1 {

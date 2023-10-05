@@ -7,16 +7,20 @@ function Home() {
   return (
     <>
       <div className="home">
-        <h1>This Website is <br /> Under Construction !</h1>
-        <br />
-        <ProgressBar
-        className="progressbar"
-          striped
-          animated
-          variant="danger"
-          now={now}
-          label={`${now}%`}
-        />
+        <div className="second-home">
+          <h1>
+            This Website is <br /> Under Construction !
+          </h1>
+          <br />
+          <ProgressBar
+            className="progressbar"
+            striped
+            animated
+            variant="danger"
+            now={now}
+            label={`${now}%`}
+          />
+        </div>
       </div>
     </>
   );

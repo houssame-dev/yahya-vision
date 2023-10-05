@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 991.5px) {
   .navbar {
-    background-color: #231f22;
+    background-color: black;
   }
 
   .navbar #nav-items {
