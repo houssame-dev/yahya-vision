@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-// import ProgressBar from "react-bootstrap/ProgressBar";
 
 function Home() {
   return (
@@ -10,34 +9,19 @@ function Home() {
           <section className="container">
             <div className="list">
               <div className="item">
-                <span className="item-txt">HI, ITS YAHYAVISION.</span>
-                <span className="item-d">
-                  <p className="item-dot dot"></p>
-                </span>
+                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
+                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
+                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
               </div>
             </div>
             <div className="list">
               <div className="item">
-                <span className="item-txt">HI, ITS YAHYAVISION.</span>
-                <span className="item-d">
-                  <p className="item-dot dot"></p>
-                </span>
+                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
+                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
+                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
               </div>
             </div>
           </section>
-
-          {/* <h1>
-            This Website is <br /> Under Construction !
-          </h1>
-          <br />
-          <ProgressBar
-            className="progressbar"
-            striped
-            animated
-            variant="danger"
-            now={15}
-            label={`${15}%`}
-          /> */}
         </div>
       </div>
     </>

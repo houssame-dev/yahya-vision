@@ -1,5 +1,5 @@
 .gallery {
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -27,4 +27,11 @@
 .gallery h1 {
   text-align: center;
   color: #e3f0fc;
+}
+
+.gallery .progressbar {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 0px;
+  height: 50px;
 }

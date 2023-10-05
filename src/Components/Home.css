@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+@font-face {
+  font-family: font1;
+  src: url('../Fonts/GLSNECB.ttf');
+}
+
 .home {
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -30,13 +37,6 @@
   color: #ef5623;
 }
 
-.home .progressbar {
-  max-width: 500px;
-  margin: auto;
-  border-radius: 0px;
-  height: 50px;
-}
-
 .home .container {
   display: flex;
   white-space: nowrap;
@@ -47,35 +47,18 @@
   display: flex;
   align-items: top;
   -webkit-animation: loop 20s infinite linear;
-  animation: loop 10s infinite linear;
+  animation: loop 20s infinite linear;
 }
 
 .home .item-txt {
-  font-family: Kumbh Sans;
-  font-size: 110px;
+  font-family: font1;
+  font-size: 150px;
   line-height: 110px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #e3f0fc;
-}
-
-.home .item-d {
-  display: inline;
-}
-
-.home .item-dot {
-  max-width: 1px;
-  max-height: 20px;
-  margin-inline: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  transform: translateY(-30px);
-}
-
-.home .dot {
-  background-color: transparent;
 }
 
 @keyframes loop {
