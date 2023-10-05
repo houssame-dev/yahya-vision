@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
 
 @font-face {
   font-family: font1;
-  src: url('../Fonts/GLSNECB.ttf');
+  src: url("../Fonts/GLSNECB.ttf");
 }
 
 .home {
-  padding: 10rem 2rem;
+  padding: 10rem 2rem 0;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -30,11 +30,6 @@
 
 .home .second-home {
   position: relative;
-}
-
-.home h1 {
-  text-align: center;
-  color: #ef5623;
 }
 
 .home .container {
@@ -61,9 +56,45 @@
   color: #e3f0fc;
 }
 
+.home .row {
+  padding: 5rem 1rem 0;
+}
+
+.home h1 {
+  color: #ef5623;
+}
+
+.home h5 {
+  color: #e3f0fc;
+}
+
+.home .social-media {
+  text-align: end;
+  margin-block: auto;
+  padding-block: 1rem;
+}
+
+.home .social-media a {
+  color: #ef5623;
+  font-size: 30px;
+}
+
 @keyframes loop {
   100% {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .home {
+    padding: 10rem 0.5rem 0;
+  }
+  .home .social-media {
+    display: flex;
+    padding-inline: 1rem;
+  }
+  .home .row {
+    padding-block: 5rem;
   }
 }
