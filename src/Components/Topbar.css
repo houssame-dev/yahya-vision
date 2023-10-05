@@ -25,11 +25,13 @@
   color: #e3f0fc;
   max-width: fit-content;
   margin-inline: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
+  font-family: font1;
+  font-weight: 600;
 }
 
 .navbar .link-button {
@@ -38,12 +40,14 @@
   color: #e3f0fc;
   max-width: fit-content;
   margin-inline: 20px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ef5623;
   border-radius: 50px;
+  font-family: font1;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 991.5px) {

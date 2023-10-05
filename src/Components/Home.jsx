@@ -7,6 +7,12 @@ import {
   FaSquareXTwitter,
   FaLinkedin,
 } from "react-icons/fa6";
+import {
+  RiBehanceFill,
+  RiInstagramFill,
+  RiLinkedinFill,
+  RiTwitterXFill,
+} from "react-icons/ri";
 
 function Home() {
   return (
@@ -46,21 +52,25 @@ function Home() {
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <FaSquareBehance />
+                  <RiBehanceFill />
                 </a>
               </div>
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <FaSquareInstagram />
+                  <RiInstagramFill />
                 </a>
               </div>
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <FaSquareXTwitter />
+                  <RiTwitterXFill />
                 </a>
               </div>
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
+                  <RiLinkedinFill />
                 </a>
               </div>
             </Col>
