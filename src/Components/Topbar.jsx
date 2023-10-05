@@ -1,40 +1,96 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import logo from "../Images/yahyavision.png";
+import menu from "../Images/menu-24.png";
+import close from "../Images/close-24.png";
+import "./Topbar.css";
 
-function Topbar() {
+function Top() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavItemClick = () => {
+    setExpanded(false);
+  };
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="navbar"
+        fixed="top"
+        expanded={expanded}
+      >
+        <Container>
+          <Nav.Link href="/" onClick={handleNavItemClick}>
+            <img src={logo} alt="logo" className="logo" />
+          </Nav.Link>
+          {expanded ? (
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              id="toggler"
+              onClick={() => setExpanded(!expanded)}
+            >
+              <img src={close} alt="close-img" />
+            </Navbar.Toggle>
+          ) : (
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              id="toggler"
+              onClick={() => setExpanded(!expanded)}
+            >
+              <img src={menu} alt="menu-img" />
+            </Navbar.Toggle>
+          )}
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto" id="nav-items">
+              <a
+                href="#home"
+                className="link-item"
+                onClick={handleNavItemClick}
+              >
+                Home
+              </a>
+              <hr />
+              <a
+                href="#about"
+                className="link-item"
+                onClick={handleNavItemClick}
+              >
+                About
+              </a>
+              <hr />
+              <a
+                href="#skills"
+                className="link-item"
+                onClick={handleNavItemClick}
+              >
+                Skills
+              </a>
+              <hr />
+              <a
+                href="#projects"
+                className="link-item"
+                onClick={handleNavItemClick}
+              >
+                Projects
+              </a>
+              <hr />
+              <a
+                href="#contact"
+                className="link-item"
+                onClick={handleNavItemClick}
+              >
+                Contact
+              </a>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 
-export default Topbar;
+export default Top;
