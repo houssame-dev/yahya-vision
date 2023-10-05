@@ -1,0 +1,30 @@
+.gallery {
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.gallery::before {
+  content: "";
+  background-image: url("../Images//background1.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 15%;
+}
+
+.gallery .second-gallery {
+  position: relative;
+}
+.gallery h1 {
+  text-align: center;
+  color: #e3f0fc;
+}

@@ -6,6 +6,7 @@ import logo from "../Images/yahyavision.png";
 import menu from "../Images/menu-24.png";
 import close from "../Images/close-24.png";
 import "./Topbar.css";
+import { Outlet, Link } from "react-router-dom";
 
 function Top() {
   const [expanded, setExpanded] = useState(false);
@@ -46,49 +47,46 @@ function Top() {
           )}
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" id="nav-items">
-              <a
-                href="#home"
-                className="link-item"
-                onClick={handleNavItemClick}
-              >
+              <Link to="/" className="link-item" onClick={handleNavItemClick}>
                 Home
-              </a>
+              </Link>
               <hr />
-              <a
-                href="#about"
+              <Link
+                to="/gallery"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                About
-              </a>
+                Gallery
+              </Link>
               <hr />
-              <a
-                href="#services"
+              <Link
+                to="/services"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
                 Services
-              </a>
+              </Link>
               <hr />
-              <a
-                href="#portfolio"
-                className="link-item"
-                onClick={handleNavItemClick}
-              >
-                Portfolio
-              </a>
-              <hr />
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
                 Contact
+              </Link>
+              <hr />
+              <a
+                href="#hire-me"
+                className="link-button"
+                onClick={handleNavItemClick}
+              >
+                Hire me
               </a>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Outlet />
     </>
   );
 }

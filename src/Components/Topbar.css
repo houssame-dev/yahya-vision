@@ -4,13 +4,6 @@
 
 .navbar .logo {
   width: 150px;
-  transition: 0.4s;
-}
-
-.navbar .logo:hover {
-  width: 150px;
-  color: #ef5623;
-  transform: scale(1.2);
 }
 
 .navbar #toggler {
@@ -24,21 +17,29 @@
 
 .navbar .link-item {
   text-decoration: none;
-  padding-inline: 10px;
+  padding: 0;
   color: #e3f0fc;
   max-width: fit-content;
-  margin-inline: auto;
+  margin-inline: 20px;
   font-size: 1.3rem;
-  padding-block: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
 }
 
-.navbar .link-item:hover {
-  color: #ef5623;
-  transform: scale(1.2);
+.navbar .link-button {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #e3f0fc;
+  max-width: fit-content;
+  margin-inline: 20px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef5623;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 991.5px) {
@@ -48,6 +49,11 @@
 
   .navbar #nav-items {
     margin-top: 3rem;
+  }
+
+  .navbar .link-item , .navbar .link-button{
+    text-align: center;
+    margin-inline: auto;
   }
 
   .navbar #responsive-navbar-nav {

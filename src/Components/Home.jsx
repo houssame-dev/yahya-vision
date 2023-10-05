@@ -10,7 +10,7 @@ function Home() {
           <section className="container">
             <div className="list">
               <div className="item">
-                <span className="item-txt">HI, ITS YAHYAVISION</span>
+                <span className="item-txt">HI, ITS YAHYAVISION.</span>
                 <span className="item-d">
                   <p className="item-dot dot"></p>
                 </span>
@@ -18,13 +18,14 @@ function Home() {
             </div>
             <div className="list">
               <div className="item">
-                <span className="item-txt">HI, ITS YAHYAVISION</span>
+                <span className="item-txt">HI, ITS YAHYAVISION.</span>
                 <span className="item-d">
                   <p className="item-dot dot"></p>
                 </span>
               </div>
             </div>
           </section>
+
           {/* <h1>
             This Website is <br /> Under Construction !
           </h1>
