@@ -1,9 +1,14 @@
 @font-face {
-    font-family: font1;
-    src: url("./Fonts/Commissioner-VariableFont_FLAR\,VOLM\,slnt\,wght.ttf");
-  }
-  
-  @font-face {
-    font-family: font2;
-    src: url("./Fonts/GLSNECB.ttf");
-  }
+  font-family: font1;
+  src: url("./Fonts/Commissioner-VariableFont_FLAR\,VOLM\,slnt\,wght.ttf");
+}
+
+@font-face {
+  font-family: font2;
+  src: url("./Fonts/GLSNECB.ttf");
+}
+
+@font-face {
+  font-family: font3;
+  src: url("./Fonts/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf");
+}

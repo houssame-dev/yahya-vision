@@ -60,14 +60,6 @@ function Top() {
               </Link>
               <hr />
               <Link
-                to="/services"
-                className="link-item"
-                onClick={handleNavItemClick}
-              >
-                Services
-              </Link>
-              <hr />
-              <Link
                 to="/contact"
                 className="link-item"
                 onClick={handleNavItemClick}

@@ -18,7 +18,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 15%;
+  opacity: 6%;
 }
 
 .home .second-home {
@@ -34,17 +34,17 @@
 .home .list {
   display: flex;
   align-items: top;
-  -webkit-animation: loop 20s infinite linear;
-  animation: loop 20s infinite linear;
+  -webkit-animation: loop 30s infinite linear;
+  animation: loop 30s infinite linear;
 }
 
 .home .item-txt {
   font-family: font2;
   font-size: 150px;
-  line-height: 110px;
+  line-height: 50px;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #e3f0fc;
 }
@@ -55,24 +55,29 @@
 
 .home h1 {
   color: #ef5623;
-  font-family: font1;
-  font-weight: 900;
+  font-family: font3;
+  font-weight: 400;
 }
 
 .home h5 {
   color: #e3f0fc;
   font-family: font1;
+  font-weight: 200;
 }
 
 .home .social-media {
   text-align: end;
   margin-block: auto;
   padding-block: 1rem;
+  display: flex;
 }
 
-.home .social-media a {
-  color: #ef5623;
-  font-size: 30px;
+.home .social-media a{
+  margin-inline: 10px;
+}
+
+.home .social-media a img{
+  width: 30px;
 }
 
 @keyframes loop {

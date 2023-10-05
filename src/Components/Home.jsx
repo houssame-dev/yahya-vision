@@ -1,18 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { Col, Row } from "react-bootstrap";
-import {
-  FaSquareBehance,
-  FaSquareInstagram,
-  FaSquareXTwitter,
-  FaLinkedin,
-} from "react-icons/fa6";
-import {
-  RiBehanceFill,
-  RiInstagramFill,
-  RiLinkedinFill,
-  RiTwitterXFill,
-} from "react-icons/ri";
+import instagram from "../Images/instagram_1_1.png";
+import twitter from "../Images/twitter_2_1.png";
+import behance from "../Images/social_1.png";
+import linkedin from "../Images/linkedin_1.png";
 
 function Home() {
   return (
@@ -36,10 +28,10 @@ function Home() {
             </div>
           </section>
           <Row className="row">
-            <Col md={3} className="text-start my-auto py-3 px-3">
+            <Col md={12} className="text-start my-auto pb-1 px-3">
               <h1>Graphic Designer</h1>
             </Col>
-            <Col md={6} className="text-start my-auto py-3 px-3">
+            <Col md={12} className="text-start my-auto pb-5 px-3">
               <h5>
                 As a <span>graphic designer</span>, I'm here to turn your vision
                 into compelling visuals. From custom logos to striking marketing
@@ -48,29 +40,25 @@ function Home() {
                 creative ideas to life!
               </h5>
             </Col>
-            <Col md={3} className="social-media">
+            <Col md={12} className="social-media">
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <FaSquareBehance />
-                  <RiBehanceFill />
+                  <img src={instagram} alt="instagram-logo" />
                 </a>
               </div>
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <FaSquareInstagram />
-                  <RiInstagramFill />
+                  <img src={twitter} alt="twitter-logo" />
                 </a>
               </div>
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <FaSquareXTwitter />
-                  <RiTwitterXFill />
+                  <img src={linkedin} alt="linkedin-logo" />
                 </a>
               </div>
               <div>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin />
-                  <RiLinkedinFill />
+                  <img src={behance} alt="behance-logo" />
                 </a>
               </div>
             </Col>
