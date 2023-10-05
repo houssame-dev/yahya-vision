@@ -3,7 +3,7 @@
 }
 
 .navbar .container {
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
 }
 
 .navbar .logo {
@@ -24,7 +24,7 @@
   padding: 0;
   color: #e3f0fc;
   max-width: fit-content;
-  margin-inline: 20px;
+  margin-inline: 10px;
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
