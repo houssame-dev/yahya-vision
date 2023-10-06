@@ -3,7 +3,20 @@
   min-height: 100vh;
   position: relative;
   width: 100%;
-  background-color: #4801FF;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   overflow-x: hidden;
 }
 
@@ -18,7 +31,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 90%;
+  opacity: 70%;
 }
 
 .home .second-home {
@@ -59,7 +72,7 @@
 .home h2 {
   color: #ef5623;
   font-family: font3;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .home h5 {
@@ -120,7 +133,7 @@
   color: #e3f0fc;
 }
 
-.home .social-media .x-icon{
+.home .social-media .x-icon {
   margin-inline: 10px;
   border: 2px solid #ef5623;
   background-color: #ef5623;
@@ -184,5 +197,12 @@
   .home h5 {
     font-size: 25px;
     line-height: 40px;
+  }
+}
+
+
+@media screen and (max-width: 991.5px){
+  .home::before {
+    background-image: none;
   }
 }

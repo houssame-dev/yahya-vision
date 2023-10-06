@@ -73,7 +73,19 @@
 
 @media screen and (max-width: 991.5px) {
   .navbar {
-    background-color: black;
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #24243e,
+      #302b63,
+      #0f0c29
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #24243e,
+      #302b63,
+      #0f0c29
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: 0;
   }
 
@@ -93,7 +105,6 @@
 
   .navbar #responsive-navbar-nav {
     height: 100vh;
-    background-color: black;
   }
 
   .navbar .social-media {

@@ -41,7 +41,7 @@ function Top() {
             alt="logo"
             className="logo"
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
           />
         </Link>
         {expanded ? (
@@ -68,7 +68,7 @@ function Top() {
               className="link-item"
               onClick={handleNavItemClick}
               data-aos="fade-down"
-              data-aos-duration="2000"
+              data-aos-duration="3000"
             >
               Home
             </Link>
@@ -78,7 +78,7 @@ function Top() {
               className="link-item"
               onClick={handleNavItemClick}
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="3000"
             >
               Gallery
             </Link>
@@ -98,7 +98,7 @@ function Top() {
               className="link-button"
               onClick={handleNavItemClick}
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="3000"
             >
               Hire Me
             </a>
