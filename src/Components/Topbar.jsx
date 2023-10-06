@@ -70,7 +70,7 @@ function Top() {
               className="link-button"
               onClick={handleNavItemClick}
             >
-              Hire me
+              Hire Me
             </a>
           </Nav>
         </Navbar.Collapse>
