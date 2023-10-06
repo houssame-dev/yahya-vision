@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Images/yahyavision.png";
-import menu from "../Images/menu-32.png";
-import close from "../Images/close-32.png";
 import "./Topbar.css";
 import { Outlet, Link } from "react-router-dom";
+import { TiThMenu } from "react-icons/ti";
+import { CgClose } from "react-icons/cg";
+import {
+  FaInstagram,
+  FaXTwitter,
+  FaLinkedinIn,
+  FaBehance,
+} from "react-icons/fa6";
 
 function Top() {
+  const currentYear = new Date().getFullYear();
+  const authorName = "yahyavision";
   const [expanded, setExpanded] = useState(false);
 
   const handleNavItemClick = () => {
@@ -32,7 +40,7 @@ function Top() {
             id="toggler"
             onClick={() => setExpanded(!expanded)}
           >
-            <img src={close} alt="close-img" />
+            <CgClose />
           </Navbar.Toggle>
         ) : (
           <Navbar.Toggle
@@ -40,7 +48,7 @@ function Top() {
             id="toggler"
             onClick={() => setExpanded(!expanded)}
           >
-            <img src={menu} alt="menu-img" />
+            <TiThMenu />
           </Navbar.Toggle>
         )}
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -72,6 +80,45 @@ function Top() {
             >
               Hire Me
             </a>
+          </Nav>
+          <hr />
+          <Nav>
+            <div className="social-media">
+              <a
+                href="https://www.instagram.com/yahyavision/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://twitter.com/yahyavision"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="x-icon"
+              >
+                <FaXTwitter />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yahyavision-a37a12273/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://www.behance.net/yahyavison"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaBehance />
+              </a>
+            </div>
+          </Nav>
+          <Nav>
+            <span className="copyright">
+              &copy; {currentYear} {authorName}.
+            </span>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

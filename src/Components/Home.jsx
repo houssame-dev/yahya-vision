@@ -1,11 +1,13 @@
 import React from "react";
 import "./Home.css";
 import { Col, Row } from "react-bootstrap";
-import instagram from "../Images/instagram_1_1.png";
-import twitter from "../Images/twitter_2_1.png";
-import behance from "../Images/social_1.png";
-import linkedin from "../Images/linkedin_1.png";
 import { Link } from "react-router-dom";
+import {
+  FaBehance,
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 function Home() {
   return (
@@ -51,42 +53,35 @@ function Home() {
               </h5>
             </Col>
             <Col md={12} className="social-media">
-              <div>
-                <a
-                  href="https://www.instagram.com/yahyavision/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={instagram} alt="instagram-logo" />
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://twitter.com/yahyavision"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={twitter} alt="twitter-logo" />
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/yahyavision-a37a12273/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={linkedin} alt="linkedin-logo" />
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://www.behance.net/yahyavison"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={behance} alt="behance-logo" />
-                </a>
-              </div>
+              <a
+                href="https://www.instagram.com/yahyavision/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://twitter.com/yahyavision"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="x-icon"
+              >
+                <FaXTwitter />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yahyavision-a37a12273/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://www.behance.net/yahyavison"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaBehance />
+              </a>
             </Col>
           </Row>
         </div>
