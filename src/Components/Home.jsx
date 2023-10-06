@@ -34,21 +34,20 @@ function Home() {
             </Col>
             <Col md={12} className="desc">
               <h5>
-                Hey there! I'm a creative spirit from beautiful Morocco,
-                dabbling in everything from logo design to branding and art.
-                Fancy a look at what I do? Pop over to my{" "}
-                <span>
-                  <Link to="/gallery" className="desc-span">
-                    Gallery
-                  </Link>{" "}
-                </span>
-                . And if you feel like chatting,{" "}
-                <span>
-                  <Link to="/contact" className="desc-span">
-                    Contact
-                  </Link>{" "}
-                </span>{" "}
-                me and let's create something awesome together!
+                Greetings from the vibrant heart of Morocco! Passion for design
+                flows through my veins – from crafting unique logos to
+                comprehensive branding, visionary creative direction, and the
+                intricate artistry of every piece I create. Dive deep into my
+                curated{" "}
+                <Link to="/gallery" className="desc-span">
+                  Gallery
+                </Link>{" "}
+                and let my work whisper stories to you. If any piece resonates
+                or you're inspired with a fresh concept, don't hesitate to{" "}
+                <Link to="/contact" className="desc-span">
+                  Contact
+                </Link>{" "}
+                me. Let's start this creative adventure together!
               </h5>
             </Col>
             <Col md={12} className="social-media">
