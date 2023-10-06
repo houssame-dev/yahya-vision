@@ -23,7 +23,7 @@ function Top() {
         fixed="top"
         expanded={expanded}
       >
-        <Link href="/" onClick={handleNavItemClick}>
+        <Link to="/" onClick={handleNavItemClick}>
           <img src={logo} alt="logo" className="logo" />
         </Link>
         {expanded ? (
