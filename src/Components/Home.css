@@ -3,13 +3,13 @@
   min-height: 100vh;
   position: relative;
   width: 100%;
-  background-color: black;
+  background-color: #4801FF;
   overflow-x: hidden;
 }
 
 .home::before {
   content: "";
-  background-image: url("../Images//background2.png");
+  background-image: url("../Images/symbol.png3.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 6%;
+  opacity: 90%;
 }
 
 .home .second-home {
