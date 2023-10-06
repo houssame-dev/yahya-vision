@@ -1,18 +1,17 @@
 .navbar {
   background-color: transparent;
-}
-
-.navbar .container {
-  padding: 2rem 0;
+  margin-top: 1rem;
 }
 
 .navbar .logo {
   width: 110px;
+  margin-left: 3rem;
 }
 
 .navbar #toggler {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 0px 0px;
   border: none;
+  margin-right: 2rem;
 }
 
 .navbar #nav-items {
@@ -31,7 +30,7 @@
   align-items: center;
   transition: 0.4s;
   font-family: font1;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .navbar .link-button {
@@ -39,7 +38,7 @@
   padding: 3px 13px;
   color: #e3f0fc;
   max-width: fit-content;
-  margin-inline: 20px;
+  margin-inline: 2rem;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -71,5 +70,6 @@
 
   .navbar #responsive-navbar-nav {
     height: 100vh;
+    background-color: black;
   }
 }

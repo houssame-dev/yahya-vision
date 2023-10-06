@@ -22,13 +22,15 @@
 }
 
 .home .second-home {
-  position: relative;
+  position: absolute;
+  top: 30%;
 }
 
 .home .container {
   display: flex;
   white-space: nowrap;
   margin-inline: 2rem;
+  position: absolute;
 }
 
 .home .list {
@@ -63,6 +65,7 @@
   color: #e3f0fc;
   font-family: font1;
   font-weight: 200;
+  max-width: 800px;
 }
 
 .home .social-media {
@@ -93,7 +96,7 @@
   }
   .home .social-media {
     display: flex;
-    padding-inline: 1rem;
+    padding-inline: 0.1rem;
   }
   .home .row {
     padding-block: 5rem;

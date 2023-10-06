@@ -28,7 +28,7 @@ function Home() {
             </div>
           </section>
           <Row className="row">
-            <Col md={12} className="text-start my-auto pb-1 px-3">
+            <Col md={12} className="text-start my-auto pt-5 p-1 px-3">
               <h1>Graphic Designer</h1>
             </Col>
             <Col md={12} className="text-start my-auto pb-5 px-3">
