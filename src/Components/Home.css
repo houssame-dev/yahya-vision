@@ -133,3 +133,28 @@
     padding-block: 5rem;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .home .item-txt {
+    font-family: font2;
+    font-size: 350px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #e3f0fc;
+  }
+  .home .row {
+    padding: 10rem 1rem 0;
+  }
+  .home h2 {
+    font-size: 50px;
+  }
+
+  .home h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
