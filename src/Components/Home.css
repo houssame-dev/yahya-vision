@@ -31,7 +31,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 70%;
+  opacity: 50%;
 }
 
 .home .second-home {
@@ -116,6 +116,7 @@
   margin-inline: 10px;
   border: 2px solid #ef5623;
   color: #ef5623;
+  background-color: #0f0c29;
   border-radius: 50px;
   padding: 6px;
   justify-content: center;
