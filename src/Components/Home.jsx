@@ -5,6 +5,7 @@ import instagram from "../Images/instagram_1_1.png";
 import twitter from "../Images/twitter_2_1.png";
 import behance from "../Images/social_1.png";
 import linkedin from "../Images/linkedin_1.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -33,31 +34,57 @@ function Home() {
             </Col>
             <Col md={12} className="desc">
               <h5>
-                Thats me! a passionate creator living in Morocco. My work spans
-                across multiple disciplines from logo design to creative
-                direction, branding, and art. Want a peek at my work? Check out
-                my gallery. anyway you can contact me. Let's make something
-                awesome together!
+                Hey there! I'm a creative spirit from beautiful Morocco,
+                dabbling in everything from logo design to branding and art.
+                Fancy a look at what I do? Pop over to my{" "}
+                <span>
+                  <Link to="/gallery" className="desc-span">
+                    Gallery
+                  </Link>{" "}
+                </span>
+                . And if you feel like chatting,{" "}
+                <span>
+                  <Link to="/contact" className="desc-span">
+                    Contact
+                  </Link>{" "}
+                </span>{" "}
+                me and let's create something awesome together!
               </h5>
             </Col>
             <Col md={12} className="social-media">
               <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/yahyavision/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={instagram} alt="instagram-logo" />
                 </a>
               </div>
               <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://twitter.com/yahyavision"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={twitter} alt="twitter-logo" />
                 </a>
               </div>
               <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/yahyavision-a37a12273/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={linkedin} alt="linkedin-logo" />
                 </a>
               </div>
               <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.behance.net/yahyavison"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={behance} alt="behance-logo" />
                 </a>
               </div>

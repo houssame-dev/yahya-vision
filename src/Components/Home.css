@@ -23,7 +23,7 @@
 
 .home .second-home {
   position: absolute;
-  top: 25%;
+  top: 30%;
 }
 
 .home .container {
@@ -64,17 +64,30 @@
 .home h5 {
   color: #e3f0fc;
   font-family: font1;
-  font-weight: 200;
-  max-width: 800px;
+  font-weight: 100;
+  max-width: 1000px;
+  line-height: 30px;
 }
 
-.home .graphic-designer{
+.home .graphic-designer {
   padding-block: 5rem 1rem;
   padding-inline: 0.1rem;
 }
 
-.home .desc{
+.home .desc {
   padding-inline: 0.1rem;
+}
+
+.home .desc-span {
+  color: #e3f0fc;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.home .desc .desc-span:hover {
+  color: #ef5623;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .home .social-media {
@@ -83,11 +96,11 @@
   display: flex;
 }
 
-.home .social-media a{
+.home .social-media a {
   margin-inline: 10px;
 }
 
-.home .social-media a img{
+.home .social-media a img {
   width: 30px;
 }
 
@@ -102,11 +115,11 @@
   .home {
     padding: 10rem 0.5rem 0;
   }
-  .home .graphic-designer{
+  .home .graphic-designer {
     padding-inline: 2rem;
   }
-  
-  .home .desc{
+
+  .home .desc {
     padding-inline: 2rem;
   }
   .home .social-media {
