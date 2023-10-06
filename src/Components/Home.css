@@ -38,6 +38,7 @@
   align-items: top;
   -webkit-animation: loop 40s infinite linear;
   animation: loop 40s infinite linear;
+  animation-delay: 2.5s;
 }
 
 .home .item-txt {

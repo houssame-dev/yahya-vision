@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -8,13 +8,21 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
+import AOS from "aos";
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="home">
         <div className="second-home">
-          <section className="container">
+          <section
+            className="container"
+            data-aos="flip-up"
+            data-aos-duration="3000"
+          >
             <div className="list">
               <div className="item">
                 <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
@@ -30,7 +38,7 @@ function Home() {
               </div>
             </div>
           </section>
-          <Row className="row">
+          <Row className="row" data-aos="fade-right" data-aos-duration="3000">
             <Col md={12} className="graphic-designer">
               <h2>Graphic Designer</h2>
             </Col>
