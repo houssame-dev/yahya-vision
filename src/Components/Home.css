@@ -104,6 +104,10 @@
   width: 30px;
 }
 
+.home .social-media a img:hover {
+  transform: scale(1.1);
+}
+
 @keyframes loop {
   100% {
     -webkit-transform: translateX(-100%);
