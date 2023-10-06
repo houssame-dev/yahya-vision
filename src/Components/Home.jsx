@@ -30,7 +30,7 @@ function Home() {
           </section>
           <Row className="row">
             <Col md={12} className="graphic-designer">
-              <h1>Graphic Designer</h1>
+              <h2>Graphic Designer</h2>
             </Col>
             <Col md={12} className="desc">
               <h5>
