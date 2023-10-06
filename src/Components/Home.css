@@ -16,13 +16,12 @@
     #302b63,
     #0f0c29
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   overflow-x: hidden;
 }
 
 .home::before {
   content: "";
-  background-image: url("../Images/symbol.png3.png");
+  background-image: url("../Images/background.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -200,8 +199,7 @@
   }
 }
 
-
-@media screen and (max-width: 991.5px){
+@media screen and (max-width: 991.5px) {
   .home::before {
     background-image: none;
   }
