@@ -63,6 +63,7 @@ function Top() {
         )}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" id="nav-items">
+            <hr />
             <Link
               to="/"
               className="link-item"
