@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Images/yahyavision.png";
-import menu from "../Images/menu-24.png";
-import close from "../Images/close-24.png";
+import menu from "../Images/menu-32.png";
+import close from "../Images/close-32.png";
 import "./Topbar.css";
 import { Outlet, Link } from "react-router-dom";
 

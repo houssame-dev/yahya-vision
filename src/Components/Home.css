@@ -23,7 +23,7 @@
 
 .home .second-home {
   position: absolute;
-  top: 30%;
+  top: 25%;
 }
 
 .home .container {
@@ -36,13 +36,13 @@
 .home .list {
   display: flex;
   align-items: top;
-  -webkit-animation: loop 30s infinite linear;
-  animation: loop 30s infinite linear;
+  -webkit-animation: loop 40s infinite linear;
+  animation: loop 40s infinite linear;
 }
 
 .home .item-txt {
   font-family: font2;
-  font-size: 150px;
+  font-size: 250px;
   line-height: 50px;
   font-style: normal;
   font-weight: normal;
@@ -68,9 +68,17 @@
   max-width: 800px;
 }
 
+.home .graphic-designer{
+  padding-block: 5rem 1rem;
+  padding-inline: 0.1rem;
+}
+
+.home .desc{
+  padding-inline: 0.1rem;
+}
+
 .home .social-media {
-  text-align: end;
-  margin-block: auto;
+  padding-inline: 0.1rem;
   padding-block: 1rem;
   display: flex;
 }
@@ -94,9 +102,15 @@
   .home {
     padding: 10rem 0.5rem 0;
   }
+  .home .graphic-designer{
+    padding-inline: 2rem;
+  }
+  
+  .home .desc{
+    padding-inline: 2rem;
+  }
   .home .social-media {
-    display: flex;
-    padding-inline: 0.1rem;
+    padding-inline: 1.4rem;
   }
   .home .row {
     padding-block: 5rem;

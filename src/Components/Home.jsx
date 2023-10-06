@@ -28,16 +28,16 @@ function Home() {
             </div>
           </section>
           <Row className="row">
-            <Col md={12} className="text-start my-auto pt-5 p-1 px-3">
+            <Col md={12} className="graphic-designer">
               <h1>Graphic Designer</h1>
             </Col>
-            <Col md={12} className="text-start my-auto pb-5 px-3">
+            <Col md={12} className="desc">
               <h5>
-                As a <span>graphic designer</span>, I'm here to turn your vision
-                into compelling visuals. From custom logos to striking marketing
-                materials, I specialize in delivering top-notch design solutions
-                that make your brand shine. Let's collaborate and bring your
-                creative ideas to life!
+                Thats me! a passionate creator living in Morocco. My work spans
+                across multiple disciplines from logo design to creative
+                direction, branding, and art. Want a peek at my work? Check out
+                my gallery. anyway you can contact me. Let's make something
+                awesome together!
               </h5>
             </Col>
             <Col md={12} className="social-media">

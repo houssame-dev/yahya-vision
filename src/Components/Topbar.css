@@ -5,13 +5,13 @@
 
 .navbar .logo {
   width: 110px;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
 }
 
 .navbar #toggler {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 0px 0px;
   border: none;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 .navbar #nav-items {
