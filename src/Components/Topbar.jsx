@@ -16,7 +16,7 @@ import AOS from "aos";
 
 function Top() {
   const currentYear = new Date().getFullYear();
-  const authorName = "yahyavision";
+  const authorName = "YahyaVision";
   const [expanded, setExpanded] = useState(false);
 
   const handleNavItemClick = () => {

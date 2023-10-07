@@ -11,6 +11,8 @@ import {
 import AOS from "aos";
 
 function Home() {
+  const currentYear = new Date().getFullYear();
+  const authorName = "YahyaVision";
   useEffect(() => {
     AOS.init();
   }, []);
@@ -20,7 +22,7 @@ function Home() {
         <div className="second-home">
           <section
             className="container"
-            data-aos="flip-up"
+            data-aos="fade-left"
             data-aos-duration="3000"
           >
             <div className="list">
@@ -40,7 +42,20 @@ function Home() {
           </section>
           <Row className="row" data-aos="fade-right" data-aos-duration="3000">
             <Col md={12} className="graphic-designer">
-              <h2>Graphic Designer</h2>
+              <div className="wrapper">
+                <div>
+                  <span>Your</span>
+                  <div className="scroller">
+                    <div>
+                      <span>Designer.</span>
+                      <span>Vision.</span>
+                      <span>Designer.</span>
+                      <span>Idea.</span>
+                      <span>Designer.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Col>
             <Col md={12} className="desc">
               <h5>
@@ -60,36 +75,41 @@ function Home() {
                 me. Let's start this creative adventure together!
               </h5>
             </Col>
-            <Col md={12} className="social-media">
-              <a
-                href="https://www.instagram.com/yahyavision/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://twitter.com/yahyavision"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="x-icon"
-              >
-                <FaXTwitter />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/yahyavision-a37a12273/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-              <a
-                href="https://www.behance.net/yahyavison"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaBehance />
-              </a>
+            <Col md={12} className="icons-fotter">
+              <div className="social-media">
+                <a
+                  href="https://www.instagram.com/yahyavision/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://twitter.com/yahyavision"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="x-icon"
+                >
+                  <FaXTwitter />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yahyavision-a37a12273/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  href="https://www.behance.net/yahyavison"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaBehance />
+                </a>
+              </div>
+              <div className="copyright">
+                &copy; {currentYear} {authorName}.
+              </div>
             </Col>
           </Row>
         </div>

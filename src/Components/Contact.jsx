@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import "./Contact.css";
-import { HiMail } from "react-icons/hi";
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import { BiSolidTimeFive } from "react-icons/bi";
 import { BsSendFill } from "react-icons/bs";
@@ -78,13 +77,18 @@ function Contact() {
         <div>
           <h1>HAVE SOME QUESTIONS ?</h1>
           <h5>
-            <GiEarthAfricaEurope /> &nbsp; Morocco &nbsp; <BiSolidTimeFive />{" "}
-            &nbsp; {moroccoTime}
+            <span>
+              <GiEarthAfricaEurope /> &nbsp; Morocco
+            </span>
+            <span>
+              <BiSolidTimeFive />
+              &nbsp; {moroccoTime}
+            </span>
           </h5>
         </div>
         <Row className="row">
           <Col lg={6} className="mail-form">
-            {/* <HiMail className="mail-icon" /> */}
+           .
           </Col>
           <Col lg={6} className="contact-form">
             <Form onSubmit={handleSubmit} className="form">
