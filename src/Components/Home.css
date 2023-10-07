@@ -24,6 +24,7 @@
 .home .second-home {
   position: absolute;
   top: 30%;
+  width: 100%;
 }
 
 .home .container {
@@ -203,10 +204,9 @@
 
 .home .copyright {
   color: #e3f0fc;
-  padding-inline: 1.3rem;
+  padding-inline: 4rem;
   font-family: font3;
 }
-
 
 @media screen and (max-width: 767.5px) {
   .home {
