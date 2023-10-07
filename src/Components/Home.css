@@ -71,8 +71,8 @@
   line-height: 1.5;
   text-align: start;
   color: #ef5623;
-  font-family: font3;
   font-size: 30px;
+  font-family: font3;
 }
 
 .wrapper span {
@@ -199,6 +199,7 @@
 .home .copyright {
   color: #e3f0fc;
   padding-inline: 1.3rem;
+  font-family: font3;
 }
 
 @keyframes loop {
