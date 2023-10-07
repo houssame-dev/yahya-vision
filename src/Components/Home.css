@@ -51,6 +51,13 @@
   color: #e3f0fc;
 }
 
+@keyframes loop {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
 .home .row {
   padding: 5rem 1rem 0;
 }
@@ -200,12 +207,6 @@
   font-family: font3;
 }
 
-@keyframes loop {
-  100% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
 
 @media screen and (max-width: 767.5px) {
   .home {
