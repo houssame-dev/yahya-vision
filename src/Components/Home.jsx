@@ -40,7 +40,7 @@ function Home() {
               </div>
             </div>
           </section>
-          <Row className="row" data-aos="fade-right" data-aos-duration="3000">
+          <Row className="row">
             <Col md={12} className="graphic-designer">
               <div className="wrapper">
                 <div>
