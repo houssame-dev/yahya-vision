@@ -37,7 +37,7 @@
   display: flex;
   align-items: top;
   -webkit-animation: loop 40s infinite linear;
-  animation: loop 40s infinite linear;
+  animation: loop 30s infinite linear;
 }
 
 .home .item-txt {
@@ -87,7 +87,6 @@
 .scroller div {
   display: inline-block;
   animation: scroll 5s infinite;
-  animation-delay: 2.5s;
 }
 .scroller span {
   display: block;

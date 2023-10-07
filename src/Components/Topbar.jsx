@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Images/yahyavision.png";
@@ -12,7 +12,6 @@ import {
   FaLinkedinIn,
   FaBehance,
 } from "react-icons/fa6";
-import AOS from "aos";
 
 function Top() {
   const currentYear = new Date().getFullYear();
@@ -22,9 +21,6 @@ function Top() {
   const handleNavItemClick = () => {
     setExpanded(false);
   };
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <>
@@ -40,8 +36,6 @@ function Top() {
             src={logo}
             alt="logo"
             className="logo"
-            data-aos="fade-right"
-            data-aos-duration="3000"
           />
         </Link>
         {expanded ? (
@@ -68,8 +62,6 @@ function Top() {
               to="/"
               className="link-item"
               onClick={handleNavItemClick}
-              data-aos="fade-down"
-              data-aos-duration="3000"
             >
               Home
             </Link>
@@ -78,8 +70,6 @@ function Top() {
               to="/gallery"
               className="link-item"
               onClick={handleNavItemClick}
-              data-aos="fade-down"
-              data-aos-duration="3000"
             >
               Gallery
             </Link>
@@ -88,8 +78,6 @@ function Top() {
               to="/contact"
               className="link-item"
               onClick={handleNavItemClick}
-              data-aos="fade-down"
-              data-aos-duration="3000"
             >
               Contact
             </Link>
@@ -98,8 +86,6 @@ function Top() {
               href="#hire-me"
               className="link-button"
               onClick={handleNavItemClick}
-              data-aos="fade-left"
-              data-aos-duration="3000"
             >
               Hire Me
             </a>
