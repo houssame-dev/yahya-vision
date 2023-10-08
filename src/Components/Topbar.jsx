@@ -15,7 +15,7 @@ import {
 
 function Top() {
   const currentYear = new Date().getFullYear();
-  const authorName = "YahyaVision";
+  const authorName = "Yahyavision";
   const [expanded, setExpanded] = useState(false);
 
   const handleNavItemClick = () => {

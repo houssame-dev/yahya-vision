@@ -11,7 +11,7 @@ import {
 
 function Home() {
   const currentYear = new Date().getFullYear();
-  const authorName = "YahyaVision";
+  const authorName = "Yahyavision";
   return (
     <>
       <div className="home">
