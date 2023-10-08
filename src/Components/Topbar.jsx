@@ -28,15 +28,11 @@ function Top() {
         collapseOnSelect
         expand="lg"
         className="navbar"
-        fixed="top"
         expanded={expanded}
+        fixed="top"
       >
         <Link to="/" onClick={handleNavItemClick}>
-          <img
-            src={logo}
-            alt="logo"
-            className="logo"
-          />
+          <img src={logo} alt="logo" className="logo" />
         </Link>
         {expanded ? (
           <Navbar.Toggle
@@ -58,11 +54,7 @@ function Top() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" id="nav-items">
             <hr />
-            <Link
-              to="/"
-              className="link-item"
-              onClick={handleNavItemClick}
-            >
+            <Link to="/" className="link-item" onClick={handleNavItemClick}>
               Home
             </Link>
             <hr />

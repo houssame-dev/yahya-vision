@@ -9,7 +9,7 @@ function Gallery() {
       <Container>
         <Row>
           {GalleryData.map((imageUrl, index) => (
-            <Col key={index} xs={12} sm={6} md={4} lg={2}>
+            <Col key={index} xs={6} sm={6} md={4} lg={2} className="px-2 py-2">
               <Image
                 src={imageUrl}
                 alt={`Image ${index}`}
