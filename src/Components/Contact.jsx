@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Container } from "react-bootstrap";
 import "./Contact.css";
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import { BiSolidTimeFive } from "react-icons/bi";
@@ -38,8 +38,8 @@ function Contact() {
       )
       .then(
         (response) => {
-          console.log("Email sent successfully:", response);
-          toast.success("Email sent successfully !", {
+          console.log("Message sent successfully:", response);
+          toast.success("Message sent successfully !", {
             position: toast.POSITION.TOP_RIGHT,
           });
           setFormData({
@@ -49,8 +49,8 @@ function Contact() {
           });
         },
         (error) => {
-          console.error("Email sending failed:", error);
-          toast.error("Email sending failed !", {
+          console.error("Message sending failed:", error);
+          toast.error("Message sending failed !", {
             position: toast.POSITION.TOP_RIGHT,
           });
         }
@@ -72,25 +72,22 @@ function Contact() {
 
   return (
     <div className="contact">
-      <ToastContainer />
-      <div className="second-contact">
-        <div>
-          <h1>HAVE SOME QUESTIONS ?</h1>
-          <h5>
-            <span>
-              <GiEarthAfricaEurope /> &nbsp; Morocco
-            </span>
-            <span>
-              <BiSolidTimeFive />
-              &nbsp; {moroccoTime}
-            </span>
-          </h5>
-        </div>
+      <Container>
+        <ToastContainer />
         <Row className="row">
-          <Col lg={6} className="mail-form">
-           .
+          <Col lg={12}>
+            <h1>HAVE SOME QUESTIONS ?</h1>
+            <h5>
+              <span>
+                <GiEarthAfricaEurope /> &nbsp; Morocco
+              </span>
+              <span>
+                <BiSolidTimeFive />
+                &nbsp; {moroccoTime}
+              </span>
+            </h5>
           </Col>
-          <Col lg={6} className="contact-form">
+          <Col lg={12} className="contact-form">
             <Form onSubmit={handleSubmit} className="form">
               <Form.Control
                 type="text"
@@ -132,7 +129,7 @@ function Contact() {
             </Form>
           </Col>
         </Row>
-      </div>
+      </Container>
     </div>
   );
 }

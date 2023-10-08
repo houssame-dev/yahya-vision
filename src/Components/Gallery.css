@@ -8,8 +8,7 @@
 
 .gallery-image {
   border: none;
-  border-radius: 3px;
-
+  border-radius: 5px;
   transition: transform 0.3s;
 }
 
