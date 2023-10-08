@@ -1,49 +1,19 @@
 .gallery {
   padding: 10rem 2rem;
   min-height: 100vh;
-  position: relative;
+  background-color: black;
   width: 100%;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow-x: hidden;
 }
 
-.gallery::before {
-  content: "";
-  background-image: url("../Images//background.png");
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 50%;
-}
-
-.gallery .second-gallery {
-  position: relative;
-}
-.gallery h1 {
-  text-align: center;
-  color: #e3f0fc;
-}
-
-.gallery .progressbar {
-  max-width: 500px;
-  margin: auto;
+.gallery-image {
+  margin-bottom: 10px;
+  border: none;
   border-radius: 0px;
-  height: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
 }

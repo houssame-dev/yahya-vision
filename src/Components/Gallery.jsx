@@ -1,25 +1,25 @@
 import React from "react";
 import "./Gallery.css";
-import { ProgressBar } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
+import { GalleryData } from "./GalleryData";
 
 function Gallery() {
   return (
     <div className="gallery">
-      <div className="second-gallery">
-        <h1>Gallery Page</h1>
-        <h1>
-            Under Construction !
-          </h1>
-          <br />
-          <ProgressBar
-            className="progressbar"
-            striped
-            animated
-            variant="danger"
-            now={40}
-            label={`${40}%`}
-          />
-      </div>
+      <Container>
+        <Row>
+          {GalleryData.map((imageUrl, index) => (
+            <Col key={index} xs={12} sm={6} md={4} lg={2}>
+              <Image
+                src={imageUrl}
+                alt={`Image ${index}`}
+                fluid
+                className="gallery-image"
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 }

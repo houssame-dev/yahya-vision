@@ -21,7 +21,7 @@
 
 .services::before {
   content: "";
-  background-image: url("../Images//background.png");
+  background-image: url("../Images//background2.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;

@@ -21,10 +21,26 @@
   opacity: 30%;
 }
 
+.home::after {
+  content: "";
+  background-image: url("../Images/background2.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 30%;
+  z-index: 0;
+}
+
 .home .second-home {
   position: absolute;
   top: 30%;
   width: 100%;
+  z-index: 1;
 }
 
 .home .container {
