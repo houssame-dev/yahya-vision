@@ -5,12 +5,12 @@
 
 .navbar .logo {
   width: 110px;
-  margin-left: 2.5rem;
+  margin-left: 3.5rem;
 }
 
 .navbar #toggler {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 0px 0px;
-  color: #e3f0fc;
+  color: white;
   margin-right: 1.5rem;
   font-size: 30px;
   display: none;
@@ -24,7 +24,7 @@
 .navbar .link-item {
   text-decoration: none;
   padding: 0;
-  color: #e3f0fc;
+  color: white;
   max-width: fit-content;
   margin-inline: 15px;
   font-size: 1rem;
@@ -41,7 +41,7 @@
   padding: 1px 13px;
   color: #ef5623;
   max-width: fit-content;
-  margin-inline: 2rem;
+  margin-inline: 3rem;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@
 
 .navbar .link-button:hover {
   background-color: #ef5623;
-  color: #e3f0fc;
+  color: white;
 }
 
 .navbar .social-media {
@@ -116,7 +116,7 @@
     margin-inline: 10px;
     border: 2px solid #ef5623;
     background-color: #ef5623;
-    color: #e3f0fc;
+    color: white;
     border-radius: 50px;
     padding: 6px;
     justify-content: center;
@@ -129,12 +129,13 @@
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
 
-  .navbar span {
+  .navbar .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     font-family: font1;
-    color: #e3f0fc;
+    font-weight: 100;
     margin-top: 1rem;
   }
 }

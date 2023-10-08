@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Gallery.css";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { GalleryData } from "./GalleryData";
+import { useLocation } from "react-router-dom";
 
 function Gallery() {
+  const currentYear = new Date().getFullYear();
+  const authorName = "Yahyavision";
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="gallery">
       <Container>
@@ -19,6 +44,9 @@ function Gallery() {
             </Col>
           ))}
         </Row>
+        <div className="copyright">
+          &copy; {currentYear} {authorName}.
+        </div>
       </Container>
     </div>
   );
