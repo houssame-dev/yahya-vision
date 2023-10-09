@@ -5,6 +5,7 @@ import Contact from "./Components/Contact";
 import Topbar from "./Components/Topbar";
 import Services from "./Components/Services";
 import Gallery from "./Components/Gallery";
+import Inferenced from "./Components/Projects/Inferenced";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="inferenced" element={<Inferenced />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Gallery.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { GalleryData } from "./GalleryData";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Gallery() {
   const currentYear = new Date().getFullYear();
@@ -35,12 +35,32 @@ function Gallery() {
         <Row>
           {GalleryData.map((imageUrl, index) => (
             <Col key={index} xs={6} sm={6} md={4} lg={2} className="px-2 py-2">
-              <Image
-                src={imageUrl}
-                alt={`Image ${index}`}
-                fluid
-                className="gallery-image"
-              />
+              {index === 0 ? ( 
+                <Link to="/inferenced">
+                  <Image
+                    src={imageUrl}
+                    alt={`Image ${index}`}
+                    fluid
+                    className="gallery-image-clicked"
+                  />
+                </Link>
+              ) : index === 4 ? ( 
+                <Link to="/sando">
+                  <Image
+                    src={imageUrl}
+                    alt={`Image ${index}`}
+                    fluid
+                    className="gallery-image-clicked"
+                  />
+                </Link>
+              ) : (
+                <Image
+                  src={imageUrl}
+                  alt={`Image ${index}`}
+                  fluid
+                  className="gallery-image"
+                />
+              )}
             </Col>
           ))}
         </Row>
