@@ -1,12 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BsFillCircleFill } from "react-icons/bs";
+import { BsFillCircleFill, BsClock } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 
 function Contact() {
+  const currentYear = new Date().getFullYear();
+  const authorName = "Yahyavision";
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -65,7 +90,7 @@ function Contact() {
               <div className="scroller">
                 <div>
                   <span>hello.</span>
-                  <span>Bonjour.</span>
+                  <span>bonjour.</span>
                   <span>hola.</span>
                   <span>مرحبًا.</span>
                   <span>hello.</span>
@@ -116,6 +141,17 @@ function Contact() {
             <Button variant="light" type="submit" className="send-btn">
               Send
             </Button>
+            <div className="avg">
+              <span className="a">
+                <BsClock /> Avg. response
+              </span>
+              <span className="b">01 hour</span>
+            </div>
+            <div className="copyright">
+              <span>
+                &copy; {currentYear} {authorName}.
+              </span>
+            </div>
           </Form>
         </Col>
       </Row>

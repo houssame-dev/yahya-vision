@@ -31,20 +31,24 @@ function Gallery() {
   }, []);
   return (
     <div className="gallery">
-      <Row>
-        {GalleryData.map((imageUrl, index) => (
-          <Col key={index} xs={6} sm={6} md={4} lg={2} className="px-2 py-2">
-            <Image
-              src={imageUrl}
-              alt={`Image ${index}`}
-              fluid
-              className="gallery-image"
-            />
-          </Col>
-        ))}
-      </Row>
-      <div className="copyright">
-        &copy; {currentYear} {authorName}.
+      <div className="second-gallery">
+        <Row>
+          {GalleryData.map((imageUrl, index) => (
+            <Col key={index} xs={6} sm={6} md={4} lg={2} className="px-2 py-2">
+              <Image
+                src={imageUrl}
+                alt={`Image ${index}`}
+                fluid
+                className="gallery-image"
+              />
+            </Col>
+          ))}
+        </Row>
+        <div className="copyright">
+          <span>
+            &copy; {currentYear} {authorName}.
+          </span>
+        </div>
       </div>
     </div>
   );

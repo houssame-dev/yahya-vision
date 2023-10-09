@@ -6,13 +6,13 @@
   overflow-x: hidden;
 }
 
-.gallery-image {
+.gallery .gallery-image {
   border: none;
   border-radius: 5px;
   transition: transform 0.3s;
 }
 
-.gallery-image:hover {
+.gallery .gallery-image:hover {
   transform: scale(1.05);
 }
 
