@@ -55,5 +55,6 @@
 @media screen and (max-width: 767.5px) {
   .contentBlock--one {
    letter-spacing: 10px;
+   font-weight: 100;
   }
 }
