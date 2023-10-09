@@ -1,5 +1,5 @@
 .contact {
-  padding: 4rem 0rem 1rem;
+  padding: 8rem 3.5rem 1rem;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -7,43 +7,114 @@
   overflow-x: hidden;
 }
 
-.contact h1 {
-  text-align: center;
+.contact .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.5;
+  text-align: start;
   color: white;
+  font-size: 30px;
   font-family: font3;
-  margin-block: 2rem;
-  padding-inline: 3rem;
 }
 
-.contact h5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: font1;
-  gap: 2rem;
+.contact .wrapper span {
+  font-weight: 100;
 }
 
-.contact h5 span {
+.contact .scroller {
+  display: inline-block;
+  height: 1.5em;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.contact .scroller div {
+  display: inline-block;
+  animation: scroll 5s infinite;
+}
+
+.contact .scroller span {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  padding-left: 10px;
+  font-weight: 300;
+}
+
+.contact .contact-para span {
   color: white;
+  font-family: font1;
+  font-weight: 100;
+  line-height: 40px;
+  font-size: 23px;
+}
+
+.contact .contact-available {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  gap: 6px;
+}
+
+.contact .contact-available .avl {
+  color: #ef5623;
+  font-size: 12px;
+}
+
+.contact .contact-available span {
+  color: white;
+  font-family: font1;
+  font-weight: 100;
+  line-height: 70px;
+}
+
+@keyframes scroll {
+  0%,
+  5% {
+    transform: translateY(0);
+  }
+  20%,
+  30% {
+    transform: translateY(-20%);
+  }
+  45%,
+  55% {
+    transform: translateY(-40%);
+  }
+  70%,
+  80% {
+    transform: translateY(-60%);
+  }
+  95%,
+  100% {
+    transform: translateY(-80%);
+  }
 }
 
 .contact .contact-form {
   align-items: center;
   justify-content: center;
   font-family: font3;
-  padding: 3rem 3rem 0;
+  margin-top: 1rem;
+}
+
+.contact .contact-form .name-email {
+  display: flex;
+  gap: 1rem;
 }
 
 .contact .contact-form .form-control {
   border-radius: 5px;
   border: none;
-  padding-inline: 1rem;
-  background-color: white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0.6rem 1rem;
+  font-weight: 100;
+  color: white;
+  background-color: #262626;
+  margin-block: 0.6rem;
+}
+
+.contact .contact-form .form-control::placeholder {
+  color: lightgray;
 }
 
 .contact .contact-form .textarea {
@@ -56,6 +127,9 @@
   border-radius: 5px;
   border: none;
   transition: 0.4s;
+  width: 100%;
+  padding-block: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 .contact .send-btn:hover {

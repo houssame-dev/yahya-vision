@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Form, Button, Row, Col, Container } from "react-bootstrap";
+import React, { useState } from "react";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import "./Contact.css";
-import { GiEarthAfricaEurope } from "react-icons/gi";
-import { BiSolidTimeFive } from "react-icons/bi";
 import { BsSendFill } from "react-icons/bs";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BsFillCircleFill } from "react-icons/bs";
 
 function Contact() {
-  const [moroccoTime, setMoroccoTime] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -57,38 +55,38 @@ function Contact() {
       );
   };
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      const moroccoDate = new Date().toLocaleTimeString("en-US", {
-        timeZone: "Africa/Casablanca",
-      });
-      setMoroccoTime(moroccoDate);
-    }, 1000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
   return (
     <div className="contact">
-      <Container>
-        <ToastContainer />
-        <Row className="row">
-          <Col lg={12}>
-            <h1>HAVE SOME QUESTIONS ?</h1>
-            <h5>
-              <span>
-                <GiEarthAfricaEurope /> &nbsp; Morocco
-              </span>
-              <span>
-                <BiSolidTimeFive />
-                &nbsp; {moroccoTime}
-              </span>
-            </h5>
-          </Col>
-          <Col lg={12} className="contact-form">
-            <Form onSubmit={handleSubmit} className="form">
+      <ToastContainer />
+      <Row className="row">
+        <Col lg={12}>
+          <div className="wrapper">
+            <div>
+              <span>Say</span>
+              <div className="scroller">
+                <div>
+                  <span>hello.</span>
+                  <span>Bonjour.</span>
+                  <span>hola.</span>
+                  <span>مرحبًا.</span>
+                  <span>hello.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="contact-para">
+            <span>
+              Want to kick off a project and need a special spark? Get in touch!
+            </span>
+          </div>
+          <div className="contact-available">
+            <BsFillCircleFill className="avl" />
+            <span>Available for work</span>
+          </div>
+        </Col>
+        <Col lg={12} className="contact-form">
+          <Form onSubmit={handleSubmit} className="form">
+            <div className="name-email">
               <Form.Control
                 type="text"
                 name="name"
@@ -97,9 +95,6 @@ function Contact() {
                 onChange={handleInputChange}
                 required
               />
-
-              <br />
-
               <Form.Control
                 type="email"
                 name="email"
@@ -108,28 +103,23 @@ function Contact() {
                 onChange={handleInputChange}
                 required
               />
-
-              <br />
-
-              <Form.Control
-                className="textarea"
-                as="textarea"
-                name="message"
-                placeholder="Your questions ..."
-                value={message}
-                onChange={handleInputChange}
-                style={{ height: "150px" }}
-                required
-              />
-
-              <br />
-              <Button variant="light" type="submit" className="send-btn">
-                <BsSendFill /> SEND MESSAGE
-              </Button>
-            </Form>
-          </Col>
-        </Row>
-      </Container>
+            </div>
+            <Form.Control
+              className="textarea"
+              as="textarea"
+              name="message"
+              placeholder="Your questions ..."
+              value={message}
+              onChange={handleInputChange}
+              style={{ height: "150px" }}
+              required
+            />
+            <Button variant="light" type="submit" className="send-btn">
+              Send
+            </Button>
+          </Form>
+        </Col>
+      </Row>
     </div>
   );
 }

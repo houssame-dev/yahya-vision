@@ -87,7 +87,7 @@
   line-height: 30px;
 }
 
-.wrapper {
+.home .wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -98,27 +98,30 @@
   font-family: font3;
 }
 
-.wrapper span {
+.home .wrapper span {
   font-weight: 100;
 }
 
-.scroller {
+.home .scroller {
   display: inline-block;
   height: 1.5em;
   overflow: hidden;
   vertical-align: top;
 }
-.scroller div {
+
+.home .scroller div {
   display: inline-block;
   animation: scroll 5s infinite;
 }
-.scroller span {
+
+.home .scroller span {
   display: block;
   text-align: left;
   line-height: 1.5;
   padding-left: 10px;
   font-weight: 300;
 }
+
 @keyframes scroll {
   0%,
   5% {
@@ -226,6 +229,7 @@
   color: white;
   font-family: font1;
   font-weight: 100;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 767.5px) {
