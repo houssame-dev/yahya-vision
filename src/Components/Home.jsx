@@ -100,7 +100,9 @@ function Home() {
                 </a>
               </div>
               <div className="copyright">
-                &copy; {currentYear} {authorName}.
+                <span>
+                  &copy; {currentYear} {authorName}.
+                </span>
               </div>
             </Col>
           </Row>

@@ -224,7 +224,7 @@
   background-color: black;
 }
 
-.home .copyright {
+.home .copyright span {
   padding-inline: 4rem;
   color: white;
   font-family: font1;
@@ -280,7 +280,7 @@
     color: white;
   }
   .home .row {
-    padding: 10rem 1rem 0;
+    padding: 12rem 1rem 0;
   }
   .home h2 {
     font-size: 40px;
