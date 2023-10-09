@@ -81,80 +81,83 @@ function Contact() {
 
   return (
     <div className="contact">
-      <ToastContainer />
-      <Row className="row">
-        <Col lg={12}>
-          <div className="wrapper">
-            <div>
-              <span>Say</span>
-              <div className="scroller">
-                <div>
-                  <span>hello.</span>
-                  <span>bonjour.</span>
-                  <span>hola.</span>
-                  <span>مرحبًا.</span>
-                  <span>hello.</span>
+      <div className="second-contact">
+        <ToastContainer />
+        <Row className="row">
+          <Col lg={12}>
+            <div className="wrapper">
+              <div>
+                <span>Say</span>
+                <div className="scroller">
+                  <div>
+                    <span>hello.</span>
+                    <span>bonjour.</span>
+                    <span>hola.</span>
+                    <span>مرحبًا.</span>
+                    <span>hello.</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="contact-para">
-            <span>
-              Want to kick off a project and need a special spark? Get in touch!
-            </span>
-          </div>
-          <div className="contact-available">
-            <BsFillCircleFill className="avl" />
-            <span>Available for work</span>
-          </div>
-        </Col>
-        <Col lg={12} className="contact-form">
-          <Form onSubmit={handleSubmit} className="form">
-            <div className="name-email">
-              <Form.Control
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={name}
-                onChange={handleInputChange}
-                required
-              />
-              <Form.Control
-                type="email"
-                name="email"
-                placeholder="What's your email ?"
-                value={email}
-                onChange={handleInputChange}
-                required
-              />
-            </div>
-            <Form.Control
-              className="textarea"
-              as="textarea"
-              name="message"
-              placeholder="Your questions ..."
-              value={message}
-              onChange={handleInputChange}
-              style={{ height: "150px" }}
-              required
-            />
-            <Button variant="light" type="submit" className="send-btn">
-              Send
-            </Button>
-            <div className="avg">
-              <span className="a">
-                <BsClock /> Avg. response
-              </span>
-              <span className="b">01 hour</span>
-            </div>
-            <div className="copyright">
+            <div className="contact-para">
               <span>
-                &copy; {currentYear} {authorName}.
+                Want to kick off a project and need a special spark? Get in
+                touch!
               </span>
             </div>
-          </Form>
-        </Col>
-      </Row>
+            <div className="contact-available">
+              <BsFillCircleFill className="avl" />
+              <span>Available for work</span>
+            </div>
+          </Col>
+          <Col lg={12} className="contact-form">
+            <Form onSubmit={handleSubmit} className="form">
+              <div className="name-email">
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={name}
+                  onChange={handleInputChange}
+                  required
+                />
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="What's your email ?"
+                  value={email}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <Form.Control
+                className="textarea"
+                as="textarea"
+                name="message"
+                placeholder="Your questions ..."
+                value={message}
+                onChange={handleInputChange}
+                style={{ height: "150px" }}
+                required
+              />
+              <Button variant="light" type="submit" className="send-btn">
+                Send
+              </Button>
+              <div className="avg">
+                <span className="a">
+                  <BsClock /> Avg. response
+                </span>
+                <span className="b">01 hour</span>
+              </div>
+              <div className="copyright">
+                <span>
+                  &copy; {currentYear} {authorName}.
+                </span>
+              </div>
+            </Form>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }

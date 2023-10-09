@@ -1,5 +1,5 @@
 .contact {
-  padding: 8rem 3.5rem 2rem;
+  padding: 8rem 3.5rem 1rem;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -190,5 +190,22 @@
       rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+}
+
+
+@media screen and (max-width: 767.5px) {
+  .contact .copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact .second-contact {
+    top: 23%;
+    left: 0;
+    padding-inline: 3.5rem;
+    position: absolute;
+    width: 100%;
   }
 }

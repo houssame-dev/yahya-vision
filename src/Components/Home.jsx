@@ -8,6 +8,7 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
+import InfiniteLooper from "./InfiniteLooper";
 
 function Home() {
   const currentYear = new Date().getFullYear();
@@ -16,22 +17,14 @@ function Home() {
     <>
       <div className="home">
         <div className="second-home">
-          <section className="container">
-            <div className="list">
-              <div className="item">
-                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
-                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
-                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
-              </div>
+          <InfiniteLooper speed="15" direction="left">
+            <div className="contentBlock contentBlock--one">
+              HI, IT'S YAHYAVISION
             </div>
-            <div className="list">
-              <div className="item">
-                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
-                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
-                <span className="item-txt">HI, ITS YAHYAVISION. &nbsp;</span>
-              </div>
+            <div className="contentBlock contentBlock--one">
+              HI, IT'S YAHYAVISION
             </div>
-          </section>
+          </InfiniteLooper>
           <Row className="row">
             <Col md={12} className="graphic-designer">
               <div className="wrapper">
@@ -50,7 +43,7 @@ function Home() {
               </div>
             </Col>
             <Col md={12} className="desc">
-              <h5>
+              <span>
                 Greetings from the vibrant heart of Morocco! Passion for design
                 flows through my veins – from crafting unique logos to
                 comprehensive branding, visionary creative direction, and the
@@ -65,7 +58,7 @@ function Home() {
                   Contact
                 </Link>{" "}
                 me. Let's start this creative adventure together!
-              </h5>
+              </span>
             </Col>
             <Col md={12} className="icons-fotter">
               <div className="social-media">

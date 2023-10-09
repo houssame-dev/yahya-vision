@@ -6,7 +6,6 @@
   background-color: black;
   overflow-x: hidden;
 }
-
 .home::before {
   content: "";
   background-image: url("../Images/background1.png");
@@ -38,53 +37,10 @@
 
 .home .second-home {
   position: absolute;
-  top: 30%;
+  top: 13%;
+  left: 0;
   width: 100%;
   z-index: 2;
-}
-
-.home .container {
-  display: flex;
-  white-space: nowrap;
-  margin-inline: 2rem;
-  position: absolute;
-}
-
-.home .list {
-  display: flex;
-  align-items: top;
-  -webkit-animation: loop 40s infinite linear;
-  animation: loop 30s infinite linear;
-}
-
-.home .item-txt {
-  font-family: font2;
-  font-size: 250px;
-  line-height: 50px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: white;
-}
-
-@keyframes loop {
-  100% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-.home .row {
-  padding: 5rem 1rem 0;
-}
-
-.home h5 {
-  color: white;
-  font-family: font1;
-  font-weight: 100;
-  max-width: 1000px;
-  line-height: 30px;
 }
 
 .home .wrapper {
@@ -119,7 +75,7 @@
   text-align: left;
   line-height: 1.5;
   padding-left: 10px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 @keyframes scroll {
@@ -146,12 +102,20 @@
 }
 
 .home .graphic-designer {
-  padding-block: 6rem 0.3rem;
-  padding-inline: 1rem;
+  padding: 1rem 4rem 0.5rem;
 }
 
 .home .desc {
-  padding: 0 1rem 1rem;
+  padding: 0 4rem 2rem;
+  max-width: 1200px;
+}
+
+.home .desc span {
+  color: white;
+  font-family: font1;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .home .desc-span {
@@ -171,11 +135,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5px;
+  padding: 0 4rem 1rem;
 }
 
 .home .social-media {
-  margin-inline: 0.3rem;
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
@@ -225,14 +188,13 @@
 }
 
 .home .copyright {
-  padding-inline: 4rem;
   color: white;
   font-family: font1;
   font-weight: 100;
   font-size: 13px;
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 912.5px) {
   .home {
     padding: 10rem 0.5rem 0;
   }
@@ -255,9 +217,7 @@
   .home .social-media {
     padding: 0.5rem 1rem 3rem;
   }
-  .home .row {
-    padding-block: 5rem 2rem;
-  }
+
   .home .icons-fotter {
     display: block;
     align-items: center;
@@ -269,25 +229,7 @@
 }
 
 @media screen and (min-width: 1600px) {
-  .home .item-txt {
-    font-family: font2;
-    font-size: 350px;
-    line-height: 50px;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: white;
-  }
-  .home .row {
-    padding: 12rem 1rem 0;
-  }
-  .home h2 {
-    font-size: 40px;
-  }
-
-  .home h5 {
-    font-size: 25px;
-    line-height: 40px;
+  .home .second-home {
+    top: 23%;
   }
 }

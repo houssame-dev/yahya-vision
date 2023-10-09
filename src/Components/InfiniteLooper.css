@@ -1,0 +1,54 @@
+/* Looper styles */
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+  animation: none;
+}
+
+/* Example content styles */
+
+#root {
+  font-family: font2;
+}
+
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.contentBlock--one {
+  width: 100%;
+  font-weight: 600;
+  font-size: 250px;
+  padding-inline: 30px;
+  height: 260px;
+}
+
