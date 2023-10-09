@@ -17,7 +17,7 @@ function Home() {
     <>
       <div className="home">
         <div className="second-home">
-          <InfiniteLooper speed="15" direction="left">
+          <InfiniteLooper speed="25" direction="left">
             <div className="contentBlock contentBlock--one">
               HI, IT'S YAHYAVISION
             </div>
