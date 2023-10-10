@@ -64,8 +64,14 @@
   justify-content: center;
 }
 
+.inferenced .card {
+  border-radius: 10px;
+  border: none;
+  margin-block: 2rem 1rem;
+}
+
 .inferenced img {
-  padding-block: 2rem;
+  border-radius: 10px;
 }
 
 .inferenced .copyright {
