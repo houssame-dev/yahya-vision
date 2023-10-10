@@ -3,6 +3,7 @@ import "./Gallery.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { GalleryData } from "./GalleryData";
 import { Link, useLocation } from "react-router-dom";
+import { FaEye } from "react-icons/fa6";
 
 function Gallery() {
   const currentYear = new Date().getFullYear();
@@ -35,24 +36,52 @@ function Gallery() {
         <Row>
           {GalleryData.map((imageUrl, index) => (
             <Col key={index} xs={6} sm={6} md={4} lg={2} className="px-2 py-2">
-              {index === 0 ? ( 
-                <Link to="/inferenced">
+              {index === 0 ? (
+                  <div className="container">
                   <Image
                     src={imageUrl}
                     alt={`Image ${index}`}
                     fluid
                     className="gallery-image-clicked"
                   />
-                </Link>
-              ) : index === 1 ? ( 
-                <Link to="/sando">
+                  <div
+                    className="overlay"
+                    style={{ backgroundColor: "#141414" }}
+                  >
+                    <div className="inside">
+                      <Link
+                        to="/inferenced"
+                        className="link"
+                        style={{ backgroundColor: "white", color: "#141414" }}
+                      >
+                        <FaEye /> View
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ) : index === 1 ? (
+                <div className="container">
                   <Image
                     src={imageUrl}
                     alt={`Image ${index}`}
                     fluid
                     className="gallery-image-clicked"
                   />
-                </Link>
+                  <div
+                    className="overlay"
+                    style={{ backgroundColor: "#f2d557" }}
+                  >
+                    <div className="inside">
+                      <Link
+                        to="/sando"
+                        className="link"
+                        style={{ backgroundColor: "black", color: "#f2d557" }}
+                      >
+                        <FaEye /> View
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <Image
                   src={imageUrl}
