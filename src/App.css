@@ -4,11 +4,8 @@
 }
 
 @font-face {
-  font-family: font2;
-  src: url('/src/Fonts/GillSansMT-ExtraCondensedBold.woff2') format('woff2'),
-      url('/src/Fonts/GillSansMT-ExtraCondensedBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'font2';
+  src: url('/src/Fonts/GillSansMT-ExtraCondensedBold.woff2') format('woff2');
   font-display: swap;
 }
 
