@@ -1,0 +1,112 @@
+.inferenced {
+    padding: 8rem 3.5rem 1rem;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    background-image: url("/src/Images/background1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .inferenced h1 {
+    color: white;
+    font-family: font3;
+    font-weight: 300;
+    font-size: 25px;
+  }
+  
+  .inferenced p {
+    color: white;
+    font-family: font1;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .inferenced .info {
+    margin-top: 3rem;
+    display: flex;
+    color: white;
+    font-family: font1;
+    gap: 3rem;
+    font-size: 15px;
+  }
+  
+  .inferenced .info .i-1 {
+    font-weight: 500;
+    list-style: none;
+  }
+  
+  .inferenced .info .i-2 {
+    font-weight: 100;
+    list-style: none;
+  }
+  
+  .inferenced .btn {
+    background-color: #262626;
+    color: white;
+    font-family: font3;
+    margin-block: 2rem 3rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .inferenced .btn:hover {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: font3;
+  }
+  
+  .inferenced .img-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inferenced .card {
+    border-radius: 10px;
+    border: none;
+    margin-block: 2rem 1rem;
+  }
+  
+  .inferenced img {
+    border-radius: 10px;
+  }
+  
+  .inferenced .copyright {
+    padding-top: 3rem;
+    color: white;
+    font-family: font1;
+    font-weight: 100;
+    text-align: end;
+    font-size: 13px;
+  }
+  
+  @media screen and (min-width: 991.5px) {
+    .navbar {
+      background-color: transparent;
+      transition: background-color 1s ease;
+    }
+  
+    .navbar.scrolled {
+      position: absolute;
+      background-color: black;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 767.5px) {
+    .inferenced {
+      padding: 8rem 1rem 1rem;
+    }
+    .inferenced .copyright {
+      text-align: center;
+    }
+  }
+  

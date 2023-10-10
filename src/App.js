@@ -6,6 +6,7 @@ import Topbar from "./Components/Topbar";
 import Services from "./Components/Services";
 import Gallery from "./Components/Gallery";
 import Inferenced from "./Components/Projects/Inferenced";
+import Sando from "./Components/Projects/Sando";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
           <Route path="inferenced" element={<Inferenced />} />
+          <Route path="sando" element={<Sando />} />
         </Routes>
       </BrowserRouter>
     </div>
