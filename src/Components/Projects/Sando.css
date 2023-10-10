@@ -1,4 +1,4 @@
-.inferenced {
+.sando {
     padding: 8rem 3.5rem 1rem;
     min-height: 100vh;
     position: relative;
@@ -12,21 +12,21 @@
     background-attachment: fixed;
   }
   
-  .inferenced h1 {
+  .sando h1 {
     color: white;
     font-family: font3;
     font-weight: 300;
     font-size: 25px;
   }
   
-  .inferenced p {
+  .sando p {
     color: white;
     font-family: font1;
     font-size: 20px;
     font-weight: 100;
   }
   
-  .inferenced .info {
+  .sando .info {
     margin-top: 3rem;
     display: flex;
     color: white;
@@ -35,17 +35,17 @@
     font-size: 15px;
   }
   
-  .inferenced .info .i-1 {
+  .sando .info .i-1 {
     font-weight: 500;
     list-style: none;
   }
   
-  .inferenced .info .i-2 {
+  .sando .info .i-2 {
     font-weight: 100;
     list-style: none;
   }
   
-  .inferenced .btn {
+  .sando .btn {
     background-color: #262626;
     color: white;
     font-family: font3;
@@ -53,28 +53,29 @@
     padding: 0.4rem 1rem;
   }
   
-  .inferenced .btn:hover {
+  .sando .btn:hover {
     background-color: #1c1c1c;
     color: white;
     font-family: font3;
   }
   
-  .inferenced .img-div {
+  .sando .img-div {
     display: flex;
     justify-content: center;
   }
   
-  .inferenced .card {
-    border-radius: 10px;
+  .sando .card {
+    border-radius: 15px;
     border: none;
     margin-block: 2rem 1rem;
   }
   
-  .inferenced img {
-    border-radius: 10px;
+  .sando img {
+    border-radius: 20px;
+    padding: 5px;
   }
   
-  .inferenced .copyright {
+  .sando .copyright {
     padding-top: 3rem;
     color: white;
     font-family: font1;
@@ -102,10 +103,10 @@
   }
   
   @media screen and (max-width: 767.5px) {
-    .inferenced {
+    .sando {
       padding: 8rem 1rem 1rem;
     }
-    .inferenced .copyright {
+    .sando .copyright {
       text-align: center;
     }
   }

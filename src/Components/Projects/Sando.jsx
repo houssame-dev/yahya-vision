@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Sando.css";
 import { Link, useLocation } from "react-router-dom";
-import img1 from "./images/inferenced1.png";
-import img2 from "./images/inferenced-id1.png";
+import img1 from "./images/sando.png";
+import img2 from "./images/sando-id.png";
 import { Card } from "react-bootstrap";
 
 function Sando() {
@@ -31,8 +31,8 @@ function Sando() {
     };
   }, []);
   return (
-    <div className="inferenced">
-      <h1>Inferenced</h1>
+    <div className="sando">
+      <h1>Sando</h1>
       <p>
         Looking for something alike? Feel free to hit the contact button below!
       </p>
@@ -44,7 +44,7 @@ function Sando() {
           <li>Year</li>
         </div>
         <div className="i-2">
-          <li>Inferenced</li>
+          <li>Sando</li>
           <li>Branding</li>
           <li>1 month</li>
           <li>2023</li>

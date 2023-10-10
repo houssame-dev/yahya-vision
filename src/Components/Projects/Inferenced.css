@@ -65,13 +65,14 @@
 }
 
 .inferenced .card {
-  border-radius: 10px;
+  border-radius: 15px;
   border: none;
   margin-block: 2rem 1rem;
 }
 
 .inferenced img {
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .inferenced .copyright {

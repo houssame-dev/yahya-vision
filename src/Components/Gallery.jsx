@@ -44,7 +44,7 @@ function Gallery() {
                     className="gallery-image-clicked"
                   />
                 </Link>
-              ) : index === 4 ? ( 
+              ) : index === 1 ? ( 
                 <Link to="/sando">
                   <Image
                     src={imageUrl}

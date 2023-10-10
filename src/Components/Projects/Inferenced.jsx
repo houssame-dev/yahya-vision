@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Inferenced.css";
 import { Link, useLocation } from "react-router-dom";
-import img1 from "./images/inferenced1.png";
-import img2 from "./images/inferenced-id1.png";
+import img1 from "./images/inferenced.png";
+import img2 from "./images/inferenced-id.png";
 import { Card } from "react-bootstrap";
 
 function Inferenced() {
