@@ -42,11 +42,11 @@
   text-align: start;
   color: #ef5623;
   font-size: 30px;
-  font-family: font3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home .wrapper span {
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .home .scroller {
@@ -66,7 +66,7 @@
   text-align: left;
   line-height: 1.5;
   padding-left: 10px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 @keyframes scroll {
@@ -103,22 +103,22 @@
 
 .home .desc span {
   color: white;
-  font-family: font1;
-  font-weight: 100;
-  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 21px;
   line-height: 30px;
 }
 
 .home .desc-span {
   color: white;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: none;
   transition: 0.4s;
 }
 
 .home .desc .desc-span:hover {
   color: #ef5623;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -180,8 +180,8 @@
 
 .home .copyright {
   color: white;
-  font-family: font1;
-  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
   font-size: 13px;
 }
 

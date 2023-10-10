@@ -33,7 +33,7 @@
 /* Example content styles */
 
 #root {
-  font-family: font2;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
 }
 
 .contentBlock {
@@ -41,20 +41,21 @@
   align-items: center;
   justify-content: center;
   margin-inline: 10px;
-  font-weight: 600;
+  font-weight: bold;
   text-align: center;
 }
 .contentBlock--one {
   width: 100%;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 250px;
   padding-inline: 30px;
   height: 260px;
+  letter-spacing: -10px;
 }
 
 @media screen and (max-width: 767.5px) {
   .contentBlock--one {
-   letter-spacing: 10px;
-   font-weight: 100;
+    letter-spacing: 10px;
+    font-weight: normal;
   }
 }

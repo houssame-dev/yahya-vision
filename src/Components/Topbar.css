@@ -32,13 +32,13 @@
   justify-content: center;
   align-items: center;
   transition: 0.4s;
-  font-family: font1;
-  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
 }
 
 .navbar .link-button {
   text-decoration: none;
-  padding: 1px 13px;
+  padding: 4px 13px;
   color: #ef5623;
   max-width: fit-content;
   margin-inline: 3rem;
@@ -49,8 +49,8 @@
   background-color: black;
   border-radius: 50px;
   border: 2px solid #ef5623;
-  font-family: font1;
-  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
@@ -141,8 +141,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: font1;
-    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
     margin-top: 1rem;
     font-size: 13px;
   }
