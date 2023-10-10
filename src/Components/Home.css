@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .home::after {
@@ -187,10 +188,6 @@
 @media screen and (max-width: 912.5px) {
   .home {
     padding: 10rem 1rem 0;
-  }
-
-  .home::before {
-    background-image: none;
   }
 
   .home::after {
