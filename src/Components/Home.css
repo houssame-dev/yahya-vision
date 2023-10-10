@@ -5,20 +5,10 @@
   width: 100%;
   background-color: black;
   overflow-x: hidden;
-}
-.home::before {
-  content: "";
   background-image: url("../Images/background1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 20%;
-  z-index: 0;
 }
 
 .home::after {

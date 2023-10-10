@@ -4,6 +4,11 @@
   background-color: black;
   width: 100%;
   overflow-x: hidden;
+  background-image: url("../Images/background1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .gallery .gallery-image {
@@ -17,7 +22,7 @@
 }
 
 .gallery .gallery-image-clicked {
-  border: none;
+  border: 2px solid white;
   border-radius: 5px;
   transition: transform 0.3s;
 }
@@ -54,7 +59,7 @@
 }
 
 @media screen and (max-width: 767.5px) {
-  .gallery{
+  .gallery {
     padding: 8rem 1rem 1rem;
   }
   .gallery .copyright {

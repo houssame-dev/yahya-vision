@@ -5,6 +5,11 @@
   width: 100%;
   background-color: black;
   overflow-x: hidden;
+  background-image: url("/src/Images/background1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .inferenced h1 {
@@ -26,13 +31,15 @@
   display: flex;
   color: white;
   font-family: font1;
+  gap: 3rem;
 }
 
-.inferenced .info .i-1 ul {
+.inferenced .info .i-1 {
   font-weight: 500;
+  list-style: none;
 }
 
-.inferenced .info .i-2 ul {
+.inferenced .info .i-2 {
   font-weight: 100;
   list-style: none;
 }

@@ -38,20 +38,20 @@ function Inferenced() {
       </p>
       <div className="info">
         <div className="i-1">
-          <ul>
+          
             <li>Client</li>
             <li>Contribution</li>
             <li>Duration</li>
             <li>Year</li>
-          </ul>
+          
         </div>
         <div className="i-2">
-          <ul>
+         
             <li>Inferenced</li>
             <li>Branding</li>
             <li>1 month</li>
             <li>2023</li>
-          </ul>
+         
         </div>
       </div>
       <Link to="/contact" className="btn" type="button">
