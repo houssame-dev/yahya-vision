@@ -5,10 +5,16 @@
 
 @font-face {
   font-family: font2;
-  src: url("./Fonts/GLSNECB.ttf");
+  src: url('/src/Fonts/GillSansMT-ExtraCondensedBold.woff2') format('woff2'),
+      url('/src/Fonts/GillSansMT-ExtraCondensedBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: font3;
   src: url("./Fonts/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf");
 }
+
+
