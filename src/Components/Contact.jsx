@@ -124,7 +124,7 @@ function Contact() {
                 <Form.Control
                   type="email"
                   name="email"
-                  placeholder="What's your email ?"
+                  placeholder="Email"
                   value={email}
                   onChange={handleInputChange}
                   required
