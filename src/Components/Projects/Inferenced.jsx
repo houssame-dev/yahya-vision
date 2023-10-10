@@ -3,6 +3,7 @@ import "./Inferenced.css";
 import { Link, useLocation } from "react-router-dom";
 import img1 from "./images/inferenced1.png";
 import img2 from "./images/inferenced-id1.png";
+import { Image } from "react-bootstrap";
 
 function Inferenced() {
   const currentYear = new Date().getFullYear();
@@ -35,14 +36,32 @@ function Inferenced() {
       <p>
         Looking for something alike? Feel free to hit the contact button below!
       </p>
+      <div className="info">
+        <div className="i-1">
+          <ul>
+            <li>Client</li>
+            <li>Contribution</li>
+            <li>Duration</li>
+            <li>Year</li>
+          </ul>
+        </div>
+        <div className="i-2">
+          <ul>
+            <li>Inferenced</li>
+            <li>Branding</li>
+            <li>1 month</li>
+            <li>2023</li>
+          </ul>
+        </div>
+      </div>
       <Link to="/contact" className="btn" type="button">
         Contact
       </Link>
-      <div>
-        <img src={img1} alt="img1" />
+      <div className="img-div">
+        <Image src={img1} alt="img1" fluid/>
       </div>
-      <div>
-        <img src={img2} alt="img2" />
+      <div className="img-div">
+        <Image src={img2} alt="img2" fluid/>
       </div>
       <div className="copyright">
         <span>

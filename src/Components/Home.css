@@ -196,7 +196,7 @@
 
 @media screen and (max-width: 912.5px) {
   .home {
-    padding: 10rem 0.5rem 0;
+    padding: 10rem 1rem 0;
   }
 
   .home::before {
@@ -214,8 +214,12 @@
   .home .desc {
     padding-inline: 2rem;
   }
+
   .home .social-media {
-    padding: 0.5rem 1rem 3rem;
+    display: flex;
+    padding-block: 1rem 2rem;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .home .icons-fotter {
