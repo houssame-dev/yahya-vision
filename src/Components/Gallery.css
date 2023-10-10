@@ -22,7 +22,7 @@
 }
 
 .gallery .gallery-image-clicked {
-  border: 2px solid white;
+  border: none;
   border-radius: 5px;
   transition: transform 0.3s;
 }
