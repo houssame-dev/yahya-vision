@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -14,13 +14,39 @@ import AOS from "aos";
 function Home() {
   const currentYear = new Date().getFullYear();
   const authorName = "Yahyavision";
+  const [showInfiniteLooper, setShowInfiniteLooper] = useState(false);
+  const [showInfiniteLooper1, setShowInfiniteLooper1] = useState(false);
+
+  // Use the useEffect hook to show the InfiniteLooper component after 2 seconds.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowInfiniteLooper(true);
+    }, 2000);
+
+    // Clear the timer if the component unmounts to prevent memory leaks.
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+  
+  // Use the useEffect hook to show the InfiniteLooper component after 3 seconds.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowInfiniteLooper1(true);
+    }, 3000);
+
+    // Clear the timer if the component unmounts to prevent memory leaks.
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
   return (
-    <>
-      <div className="home">
-        <div className="second-home">
+    <div className="home">
+      <div className="second-home">
+        {showInfiniteLooper && (
           <InfiniteLooper speed="25" direction="left">
             <div className="contentBlock contentBlock--one">
               HI, IT'S YAHYAVISION
@@ -29,6 +55,8 @@ function Home() {
               HI, IT'S YAHYAVISION
             </div>
           </InfiniteLooper>
+        )}
+        {showInfiniteLooper1 && (
           <Row className="row" data-aos="fade-right" data-aos-duration="1500">
             <Col md={12} className="graphic-designer">
               <div className="wrapper">
@@ -103,9 +131,9 @@ function Home() {
               </div>
             </Col>
           </Row>
-        </div>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 

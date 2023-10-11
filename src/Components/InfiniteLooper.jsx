@@ -61,7 +61,7 @@ const InfiniteLooper = function InfiniteLooper({ speed, direction, children }) {
       className="looper"
       ref={outerRef}
       data-aos="fade-left"
-      data-aos-duration="3000"
+      data-aos-duration="1500"
     >
       <div className="looper__innerList" ref={innerRef} data-animate="true">
         {[...Array(looperInstances)].map((_, ind) => (

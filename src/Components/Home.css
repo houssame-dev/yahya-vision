@@ -59,7 +59,7 @@
 .home .scroller div {
   display: inline-block;
   animation: scroll 5s infinite;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 
 .home .scroller span {
