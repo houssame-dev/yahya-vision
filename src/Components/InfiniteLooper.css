@@ -34,7 +34,7 @@
 /* Example content styles */
 
 #root {
-  font-family: 'Six Caps', sans-serif;
+  font-family: font-home;
 }
 
 .contentBlock {
@@ -52,4 +52,3 @@
   font-weight: 500;
   letter-spacing: -5px;
 }
-

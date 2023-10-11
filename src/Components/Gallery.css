@@ -41,7 +41,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: transform 0.3s;
+  transition: 0.3s;
   border-radius: 5px;
 }
 
@@ -50,7 +50,7 @@
   transform: scale(1.05);
 }
 
-.gallery .inside{
+.gallery .inside {
   justify-content: center;
   display: flex;
   align-items: baseline;
