@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Images/yahyavision.png";
@@ -12,6 +12,7 @@ import {
   FaLinkedinIn,
   FaBehance,
 } from "react-icons/fa6";
+import AOS from "aos";
 
 function Top() {
   const currentYear = new Date().getFullYear();
@@ -21,7 +22,9 @@ function Top() {
   const handleNavItemClick = () => {
     setExpanded(false);
   };
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Navbar
@@ -31,7 +34,12 @@ function Top() {
         expanded={expanded}
         fixed="top"
       >
-        <Link to="/" onClick={handleNavItemClick}>
+        <Link
+          to="/"
+          onClick={handleNavItemClick}
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <img src={logo} alt="logo" className="logo" />
         </Link>
         {expanded ? (
@@ -52,7 +60,12 @@ function Top() {
           </Navbar.Toggle>
         )}
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" id="nav-items">
+          <Nav
+            className="ms-auto"
+            id="nav-items"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             <hr />
             <Link to="/" className="link-item" onClick={handleNavItemClick}>
               Home

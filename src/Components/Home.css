@@ -46,7 +46,7 @@
 }
 
 .home .wrapper span {
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .home .scroller {
@@ -59,6 +59,7 @@
 .home .scroller div {
   display: inline-block;
   animation: scroll 5s infinite;
+  animation-delay: 1.5s;
 }
 
 .home .scroller span {

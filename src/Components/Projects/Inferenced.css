@@ -1,5 +1,5 @@
 .inferenced {
-  padding: 8rem 3.5rem 1rem;
+  padding: 8rem 3.5rem 2rem;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -65,14 +65,13 @@
 }
 
 .inferenced .card {
-  border-radius: 15px;
+  border-radius: 50px;
   border: none;
   margin-block: 2rem 1rem;
 }
 
 .inferenced img {
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 10px;
 }
 
 .inferenced .copyright {

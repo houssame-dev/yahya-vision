@@ -7,6 +7,7 @@ import Services from "./Components/Services";
 import Gallery from "./Components/Gallery";
 import Inferenced from "./Components/Projects/Inferenced";
 import Sando from "./Components/Projects/Sando";
+import 'aos/dist/aos.css';
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./InfiniteLooper.css";
+import AOS from "aos";
 
 const InfiniteLooper = function InfiniteLooper({ speed, direction, children }) {
   const [looperInstances, setLooperInstances] = useState(1);
@@ -52,9 +53,16 @@ const InfiniteLooper = function InfiniteLooper({ speed, direction, children }) {
       window.removeEventListener("resize", setupInstances);
     };
   }, [looperInstances, setupInstances]);
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="looper" ref={outerRef}>
+    <div
+      className="looper"
+      ref={outerRef}
+      data-aos="fade-left"
+      data-aos-duration="3000"
+    >
       <div className="looper__innerList" ref={innerRef} data-animate="true">
         {[...Array(looperInstances)].map((_, ind) => (
           <div

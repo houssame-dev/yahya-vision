@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -9,10 +9,14 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import InfiniteLooper from "./InfiniteLooper";
+import AOS from "aos";
 
 function Home() {
   const currentYear = new Date().getFullYear();
   const authorName = "Yahyavision";
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <>
       <div className="home">
@@ -25,7 +29,7 @@ function Home() {
               HI, IT'S YAHYAVISION
             </div>
           </InfiniteLooper>
-          <Row className="row">
+          <Row className="row" data-aos="fade-right" data-aos-duration="1500">
             <Col md={12} className="graphic-designer">
               <div className="wrapper">
                 <div>
