@@ -76,7 +76,7 @@ function Top() {
               className="link-item"
               onClick={handleNavItemClick}
             >
-              Gallery
+              Work
             </Link>
             <hr />
             <Link
@@ -87,13 +87,13 @@ function Top() {
               Contact
             </Link>
             <hr />
-            <a
+            <button
               href="#hire-me"
               className="link-button"
               onClick={handleNavItemClick}
             >
               Hire Me
-            </a>
+            </button>
           </Nav>
           <hr />
           <Nav>

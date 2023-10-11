@@ -68,6 +68,7 @@
   border-radius: 50px;
   border: none;
   margin-block: 2rem 1rem;
+  background-color: transparent;
 }
 
 .sando img {
@@ -81,7 +82,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-weight: lighter;
-  padding-block: 2rem;
+  padding-block: 2rem 0;
   gap: 1rem;
 }
 

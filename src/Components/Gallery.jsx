@@ -35,9 +35,15 @@ function Gallery() {
       <div className="second-gallery">
         <Row>
           {GalleryData.map((imageUrl, index) => (
-            <Col key={index} xs={6} sm={6} md={4} lg={2} className="px-2 py-2">
+            <Col
+              key={index}
+              xs={6}
+              sm={6}
+              md={4}
+              lg={2}
+              className="px-2 py-2">
               {index === 0 ? (
-                  <div className="container">
+                <div className="container">
                   <Image
                     src={imageUrl}
                     alt={`Image ${index}`}
@@ -82,7 +88,30 @@ function Gallery() {
                     </div>
                   </div>
                 </div>
-              ) : (
+              ) : index === 2 ? (
+                <div className="container">
+                  <Image
+                    src={imageUrl}
+                    alt={`Image ${index}`}
+                    fluid
+                    className="gallery-image-clicked"
+                  />
+                  <div
+                    className="overlay"
+                    style={{ backgroundColor: "#CCC5B9" }}
+                  >
+                    <div className="inside">
+                      <Link
+                        to="/zero"
+                        className="link"
+                        style={{ backgroundColor: "black", color: "#CCC5B9" }}
+                      >
+                        <FaEye /> View
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ):(
                 <Image
                   src={imageUrl}
                   alt={`Image ${index}`}

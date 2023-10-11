@@ -62,7 +62,7 @@
 .navbar .link-button:hover {
   background-color: #ef5623;
   color: white;
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .navbar .social-media {

@@ -8,6 +8,7 @@ import Gallery from "./Components/Gallery";
 import Inferenced from "./Components/Projects/Inferenced";
 import Sando from "./Components/Projects/Sando";
 import 'aos/dist/aos.css';
+import Zero from "./Components/Projects/Zero";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="inferenced" element={<Inferenced />} />
           <Route path="sando" element={<Sando />} />
+          <Route path="zero" element={<Zero />} />
         </Routes>
       </BrowserRouter>
     </div>

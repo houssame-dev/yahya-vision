@@ -21,7 +21,7 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowInfiniteLooper(true);
-    }, 2000);
+    }, 1500);
 
     // Clear the timer if the component unmounts to prevent memory leaks.
     return () => {
@@ -33,7 +33,7 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowInfiniteLooper1(true);
-    }, 3000);
+    }, 2000);
 
     // Clear the timer if the component unmounts to prevent memory leaks.
     return () => {
