@@ -4,9 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 import img1 from "./images/sando.png";
 import img2 from "./images/sando-id.png";
 import { Card } from "react-bootstrap";
-import { FaBehance } from "react-icons/fa";
-import { HiArrowRight } from "react-icons/hi2";
-import GetBack from "../GetBack";
+import { FaBehance } from "react-icons/fa";  
+import { HiArrowRight } from "react-icons/hi2"; 
 
 function Sando() {
   const currentYear = new Date().getFullYear();
@@ -67,24 +66,17 @@ function Sando() {
           <Card.Img src={img2} alt="img2" />
         </Card>
       </div>
-      <div className="bottom">
-        <div>
-           <GetBack />
-        </div>   
-        <div className="behance">
-          <span>
-            See full project <HiArrowRight />
-          </span>
-          <span>
-            <a
-              href="https://www.behance.net/gallery/171797665/Brand-Identity-Logo-Design-Sando"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaBehance />
-            </a>
-          </span>
-        </div>
+      <div className="behance">
+        <span>See full project <HiArrowRight/></span>
+        <span>
+          <a
+            href="https://www.behance.net/gallery/171797665/Brand-Identity-Logo-Design-Sando"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaBehance />
+          </a>
+        </span>
       </div>
       <div className="copyright">
         <span>
