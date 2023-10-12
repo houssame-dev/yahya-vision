@@ -42,7 +42,7 @@
   text-align: start;
   color: #ef5623;
   font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home .wrapper span {
@@ -222,6 +222,13 @@
 
 @media screen and (min-width: 1600px) {
   .home .second-home {
-    top: 23%;
+    top: 6%;
+  }
+  .home .wrapper {
+    font-size: 60px;
+  }
+  .home .desc span {
+    font-size: 31px;
+    line-height: 50px;
   }
 }

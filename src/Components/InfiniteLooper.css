@@ -52,3 +52,10 @@
   font-weight: 500;
   letter-spacing: -5px;
 }
+
+@media screen and (min-width: 1600px) {
+  .contentBlock--one {
+    font-size: 450px;
+    height: 460px;
+  }
+}
