@@ -222,13 +222,13 @@
 
 @media screen and (min-width: 1600px) {
   .home .second-home {
-    top: 6%;
+    top: 12%;
   }
   .home .wrapper {
-    font-size: 60px;
+    font-size: 50px;
   }
   .home .desc span {
-    font-size: 31px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 40px;
   }
 }
