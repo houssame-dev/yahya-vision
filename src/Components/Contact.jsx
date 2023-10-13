@@ -81,8 +81,8 @@ function Contact() {
 
   return (
     <div className="contact">
+      <ToastContainer />
       <div className="second-contact">
-        <ToastContainer />
         <Row className="row">
           <Col lg={12}>
             <div className="wrapper">
