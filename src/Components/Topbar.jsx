@@ -55,8 +55,6 @@ function Top() {
             aria-controls="responsive-navbar-nav"
             id="toggler"
             onClick={() => setExpanded(!expanded)}
-            data-aos="fade-down"
-            data-aos-duration="1500"
           >
             <TiThMenu />
           </Navbar.Toggle>
