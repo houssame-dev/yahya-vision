@@ -99,7 +99,7 @@
 }
 
 .home .desc {
-  padding: 0 4rem 2rem;
+  padding: 0 4rem 1rem;
   max-width: 1200px;
 }
 
@@ -128,7 +128,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4rem 1rem;
+  padding-inline: 4rem;
 }
 
 .home .social-media {
@@ -185,6 +185,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
   font-size: 13px;
+  text-align: end;
+  padding-inline: 4rem;
 }
 
 @media screen and (max-width: 912.5px) {
@@ -218,6 +220,7 @@
   }
   .home .copyright {
     text-align: center;
+    padding-bottom: 1rem;
   }
 }
 

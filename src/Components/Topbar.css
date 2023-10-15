@@ -1,17 +1,14 @@
 .navbar {
   background-color: transparent;
-  margin-top: 1rem;
 }
 
 .navbar .logo {
   width: 110px;
-  margin-left: 3.5rem;
 }
 
 .navbar #toggler {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 0px 0px;
   color: white;
-  margin-right: 1.5rem;
   font-size: 30px;
   display: none;
   border: none;
@@ -19,20 +16,19 @@
 
 .navbar #nav-items {
   text-align: center;
+  gap: 1rem;
 }
 
 .navbar .link-item {
   text-decoration: none;
-  padding: 0;
   color: white;
   max-width: fit-content;
-  margin-inline: 15px;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: normal;
 }
 
@@ -41,7 +37,6 @@
   padding: 4px 13px;
   color: #ef5623;
   max-width: fit-content;
-  margin-inline: 3rem;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -49,7 +44,7 @@
   background-color: black;
   border-radius: 50px;
   border: 2px solid #ef5623;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
@@ -76,20 +71,10 @@
 @media screen and (max-width: 991.5px) {
   .navbar {
     background-color: black;
-    margin-top: 0;
-  }
-
-  .navbar .logo {
-    margin-left: 2rem;
   }
 
   .navbar #toggler {
     display: block;
-    margin-right: 1rem;
-  }
-
-  .navbar #nav-items {
-    margin-top: 3rem;
   }
 
   .navbar .link-item,
@@ -98,18 +83,14 @@
     margin-inline: auto;
   }
 
-  .navbar #responsive-navbar-nav {
-    height: 100vh;
-  }
-
   .navbar .social-media {
-    padding-block: 2rem;
+    padding-block: 1rem;
     display: flex;
     justify-content: center;
+    gap: 1rem;
   }
 
   .navbar .social-media a {
-    margin-inline: 10px;
     border: 2px solid #ef5623;
     color: #ef5623;
     background-color: black;
@@ -120,7 +101,6 @@
   }
 
   .navbar .social-media .x-icon {
-    margin-inline: 10px;
     border: 2px solid #ef5623;
     background-color: #ef5623;
     color: white;
@@ -141,9 +121,9 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    margin-top: 1rem;
+    padding-block: 1rem 100rem;
     font-size: 13px;
   }
 }

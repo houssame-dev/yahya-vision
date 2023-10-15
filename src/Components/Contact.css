@@ -1,5 +1,5 @@
 .contact {
-  padding: 4rem 3.5rem 2rem;
+  padding: 8rem 3rem 2rem;
   min-height: 100vh;
   width: 100%;
   background-color: black;
@@ -9,13 +9,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.contact .second-contact {
-  min-height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .contact .wrapper {
@@ -206,11 +199,3 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .contact .second-contact {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}

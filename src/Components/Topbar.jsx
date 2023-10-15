@@ -30,7 +30,7 @@ function Top() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="navbar"
+        className="navbar px-5 py-3"
         expanded={expanded}
         fixed="top"
       >

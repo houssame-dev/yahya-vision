@@ -110,7 +110,7 @@ function Contact() {
               <span>Available for work</span>
             </div>
           </Col>
-          <Col lg={12} className="contact-form">
+          <Col lg={8} xl={7} xxl={6} className="contact-form">
             <Form onSubmit={handleSubmit} className="form">
               <div className="name-email">
                 <Form.Control
@@ -149,14 +149,14 @@ function Contact() {
                 </span>
                 <span className="b">01 hour</span>
               </div>
-              <div className="copyright">
-                <span>
-                  &copy; {currentYear} {authorName}.
-                </span>
-              </div>
             </Form>
           </Col>
         </Row>
+        <div className="copyright">
+          <span>
+            &copy; {currentYear} {authorName}.
+          </span>
+        </div>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ function Home() {
       clearTimeout(timer);
     };
   }, []);
-  
+
   // Use the useEffect hook to show the InfiniteLooper component after 3 seconds.
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -124,12 +124,12 @@ function Home() {
                   <FaBehance />
                 </a>
               </div>
-              <div className="copyright">
-                <span>
-                  &copy; {currentYear} {authorName}.
-                </span>
-              </div>
             </Col>
+            <div className="copyright">
+              <span>
+                &copy; {currentYear} {authorName}.
+              </span>
+            </div>
           </Row>
         )}
       </div>
