@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import "./Gallery.css";
+import "./Work.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { GalleryData } from "./GalleryData";
 import { Link, useLocation } from "react-router-dom";
 import { FaEye } from "react-icons/fa6";
 
-function Gallery() {
+function Work() {
   const currentYear = new Date().getFullYear();
   const authorName = "Yahyavision";
   const location = useLocation();
@@ -31,8 +31,8 @@ function Gallery() {
     };
   }, []);
   return (
-    <div className="gallery">
-      <div className="second-gallery">
+    <div className="work">
+      <div className="second-work">
         <Row>
           {GalleryData.map((imageUrl, index) => (
             <Col
@@ -48,7 +48,7 @@ function Gallery() {
                     src={imageUrl}
                     alt={`Image ${index}`}
                     fluid
-                    className="gallery-image-clicked"
+                    className="work-image-clicked"
                   />
                   <div
                     className="overlay"
@@ -71,7 +71,7 @@ function Gallery() {
                     src={imageUrl}
                     alt={`Image ${index}`}
                     fluid
-                    className="gallery-image-clicked"
+                    className="work-image-clicked"
                   />
                   <div
                     className="overlay"
@@ -94,7 +94,7 @@ function Gallery() {
                     src={imageUrl}
                     alt={`Image ${index}`}
                     fluid
-                    className="gallery-image-clicked"
+                    className="work-image-clicked"
                   />
                   <div
                     className="overlay"
@@ -116,7 +116,7 @@ function Gallery() {
                   src={imageUrl}
                   alt={`Image ${index}`}
                   fluid
-                  className="gallery-image"
+                  className="work-image"
                 />
               )}
             </Col>
@@ -132,4 +132,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default Work;

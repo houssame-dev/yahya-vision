@@ -1,4 +1,4 @@
-.gallery {
+.work {
   padding: 8rem 3rem 2rem;
   min-height: 100vh;
   background-color: black;
@@ -11,28 +11,28 @@
   background-attachment: fixed;
 }
 
-.gallery .gallery-image {
+.work .work-image {
   border: none;
   border-radius: 5px;
   transition: 0.3s;
 }
 
-.gallery .gallery-image:hover {
+.work .work-image:hover {
   transform: scale(1.05);
 }
 
-.gallery .container {
+.work .container {
   position: relative;
   padding: 0;
 }
 
-.gallery .gallery-image-clicked {
+.work .work-image-clicked {
   display: block;
   border: none;
   border-radius: 5px;
 }
 
-.gallery .overlay {
+.work .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -45,18 +45,18 @@
   border-radius: 5px;
 }
 
-.gallery .container:hover .overlay {
+.work .container:hover .overlay {
   opacity: 1;
   transform: scale(1.05);
 }
 
-.gallery .inside {
+.work .inside {
   justify-content: center;
   display: flex;
   align-items: baseline;
 }
 
-.gallery .inside .link {
+.work .inside .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@
   text-align: center;
 }
 
-.gallery .copyright {
+.work .copyright {
   padding-top: 3rem;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -104,10 +104,10 @@
 }
 
 @media screen and (max-width: 767.5px) {
-  .gallery {
+  .work {
     padding: 8rem 1rem 1rem;
   }
-  .gallery .copyright {
+  .work .copyright {
     text-align: center;
   }
 }

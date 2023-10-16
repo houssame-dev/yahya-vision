@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import Topbar from "./Components/Topbar";
 import Services from "./Components/Services";
-import Gallery from "./Components/Gallery";
+import Work from "./Components/Work";
 import Inferenced from "./Components/Projects/Inferenced";
 import Sando from "./Components/Projects/Sando";
 import 'aos/dist/aos.css';
@@ -17,7 +17,7 @@ function App() {
       <Topbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="gallery" element={<Gallery />} />
+          <Route path="work" element={<Work />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
           <Route path="inferenced" element={<Inferenced />} />
