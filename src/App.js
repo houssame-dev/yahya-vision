@@ -7,14 +7,15 @@ import Services from "./Components/Services";
 import Work from "./Components/Work";
 import Inferenced from "./Components/Projects/Inferenced";
 import Sando from "./Components/Projects/Sando";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import Zero from "./Components/Projects/Zero";
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Topbar />
+        <Topbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="work" element={<Work />} />

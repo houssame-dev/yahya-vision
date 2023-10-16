@@ -72,7 +72,7 @@ function Top() {
             </Link>
             <hr />
             <Link
-              to="/gallery"
+              to="/work"
               className="link-item"
               onClick={handleNavItemClick}
             >
