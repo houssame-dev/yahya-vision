@@ -81,7 +81,7 @@ function Home() {
                 comprehensive branding, visionary creative direction, and the
                 intricate artistry of every piece I create. Dive deep into my
                 curated{" "}
-                <Link to="/gallery" className="desc-span">
+                <Link to="/work" className="desc-span">
                   Gallery
                 </Link>{" "}
                 and let my work whisper stories to you. If any piece resonates
